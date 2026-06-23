@@ -1,11 +1,11 @@
 {
-  "rung_floor": 1,
-  "next_stretch_rung": 3,
+  "rung_floor": 3,
+  "next_stretch_rung": 4,
   "ladder": [
     "1. Apply heat to a single protein in a pan (sear steak, cook chicken).",
     "2. Fat as a medium + basting; rest and doneness by feel/temp.",
     "3. Pan sauce off the fond (deglaze, mount with butter).",
-    "4. Knife basics \u2014 even dice.",
+    "4. Knife basics — even dice.",
     "5. Saute aromatics + vegetables to the right point.",
     "6. Cook a starch in the pot (rice, pasta, potatoes) to correct texture.",
     "7. Time a full plate: protein + veg + starch finishing together.",
@@ -49,15 +49,22 @@
       "made": true,
       "verdict": "liked",
       "note": "cooks eggs in rendered fat"
+    },
+    {
+      "date": "2026-06-23",
+      "dish": "Chicken Thighs with Lemon-Butter Pan Sauce",
+      "made": true,
+      "verdict": "liked",
+      "note": "First solo pan sauce — deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."
     }
   ],
   "awaiting_feedback": {
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "options": [
-      "Pan-Seared Pork Chop",
-      "Crispy-Skin Salmon",
-      "Steak with Red Wine Pan Sauce",
-      "Chicken Thighs with Lemon-Butter Pan Sauce"
+      "Steak & Eggs",
+      "Garlic Butter Shrimp",
+      "Steak & Fresh Salsa Bowl",
+      "Cilantro-Lime Chicken Bowl"
     ]
   }
 }

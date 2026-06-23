@@ -174,89 +174,105 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Tuesday, June 23, 2026",
-  rung: "Rung 1 · single protein, one pan",
+  date: "Wednesday, June 24, 2026",
+  rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
-    name: "The pan sauce",
-    blurb: "You already sear a protein. Tonight you turn the browned bits stuck to the pan — the fond — into a glossy sauce: add a splash of liquid, scrape it loose, swirl in cold butter off the heat. Biggest flavour payoff for the least new effort in cooking. Both stretches below teach the same one move."
+    name: "The even dice",
+    blurb: "You can sear, cook in fat, and finish a pan sauce. Tonight, the knife. Cut your ingredients to the same size and they cook at the same rate, brown evenly, and pile neatly on a fork. It's the quiet skill under every salsa, stir-fry, and sauté ahead. Both stretches below drill the exact same cut, once on beef and once on chicken."
   },
   options: [
     {
-      id:"porkchop", title:"Pan-Seared Pork Chop", kind:"comfort", time:"~20 min",
-      tag:"Same skill as your steak, new protein. Boneless chops are cheap and forgiving if you pull them at 145°F.",
-      cal:420, protein:37, fat:30, carb:2,
+      id:"steakeggs", title:"Steak & Eggs", kind:"comfort", time:"~20 min",
+      tag:"Two things you already nail — a seared steak and eggs cooked in the fat — on one plate. Pure confidence food.",
+      cal:610, protein:56, fat:42, carb:2,
       ingredients:[
-        "1 boneless pork chop (~6 oz)","1 tbsp neutral oil (canola/avocado)",
-        "½ tsp each: garlic powder, paprika, salt; pinch of pepper"
+        "1 steak, ~6 oz (sirloin, strip, or whatever's on sale)",
+        "2 large eggs",
+        "1 tbsp neutral oil, plus a pat of butter",
+        "Salt and pepper"
       ],
       steps:[
-        "Take the chop out 20 min early and pat it bone-dry — dry meat browns, wet meat steams.",
-        "Rub both sides with the garlic powder, paprika, salt, and pepper.",
-        "Heat the pan medium-high 2–3 min, add oil, swirl to coat.",
-        "Lay the chop down away from you. Sear 3–4 min without touching it until deep golden.",
-        "Flip, drop the heat to low, and cover the pan. 3–5 min more until the centre reads 145°F (or the juices run clear).",
-        "Rest 3 min on a plate before cutting. A chop dries out fast, so the rest matters."
+        "Pull the steak out 20 min early and pat it bone-dry. Season both sides hard with salt and pepper.",
+        "Heat the pan medium-high 2–3 min, add the oil, swirl to coat.",
+        "Sear the steak 4 min on the first side without moving it, flip, 3–4 min more for medium-rare. Move it to a plate to rest.",
+        "Rendered fat and brown bits are left in the pan — that's flavour. Drop the heat to medium-low and add a pat of butter.",
+        "Crack the eggs into the fat. Fry 2–3 min until the whites set and the edges crisp, spooning a little fat over the tops — just like your bacon-fat eggs.",
+        "Slice the rested steak, slide the eggs alongside, and season the eggs with a pinch of salt."
       ],
       why:null,
-      src:'Rewritten from Inspired Taste, <a href="https://www.inspiredtaste.net/37062/juicy-skillet-pork-chops/">The Best Juicy Skillet Pork Chops</a>. Macros are estimates.'
+      src:'Steak method from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-steak/">Pan Seared Steak</a>. Macros are estimates.'
     },
     {
-      id:"salmon", title:"Crispy-Skin Salmon", kind:"comfort", time:"~15 min",
-      tag:"Fast, lean, protein-forward. The trick is leaving it alone so the skin crisps instead of sticking.",
-      cal:420, protein:35, fat:30, carb:0,
+      id:"garlicshrimp", title:"Garlic Butter Shrimp", kind:"comfort", time:"~10 min",
+      tag:"Fast, lean, protein-forward — and secretly a pan sauce. Butter, garlic, a squeeze of lemon: the move you just learned, in ten minutes.",
+      cal:370, protein:36, fat:24, carb:3,
       ingredients:[
-        "1 salmon fillet, skin on (~6 oz)","1 tbsp neutral oil","Salt, black pepper","Lemon wedge, to finish"
+        "6 oz shrimp, peeled and deveined (thawed if frozen, patted dry)",
+        "2 tbsp butter",
+        "2 garlic cloves, finely chopped",
+        "Juice of ½ lemon",
+        "Salt, pepper, a pinch of parsley if you have it"
       ],
       steps:[
-        "Pat the salmon very dry, especially the skin. Salt and pepper both sides.",
-        "Heat the pan medium-high 2 min, add oil, swirl to coat.",
-        "Lay the fillet skin-side down, pressing it flat for 10 sec so the skin stays in contact. Now don't move it — 4–5 min until the skin is crisp and releases on its own.",
-        "Flip and cook 2–3 min more. The flesh should flake when nudged and look just barely opaque in the centre.",
-        "Squeeze lemon over the top and serve skin-side up to keep it crisp."
+        "Pat the shrimp very dry and season with salt and pepper. Dry shrimp sear; wet shrimp steam.",
+        "Melt the butter in the pan over medium heat. Add the garlic and stir 30 sec until it smells good — don't let it brown.",
+        "Add the shrimp in one layer. Cook 2–3 min per side until they turn pink and curl into a loose C. A tight O means overcooked, so pull them the moment they're opaque.",
+        "Squeeze in the lemon and swirl the pan — that bright, buttery liquid is your quick pan sauce. Toss the shrimp to coat.",
+        "Scatter parsley over and eat right away."
       ],
       why:null,
-      src:'Rewritten from Once Upon a Chef, <a href="https://www.onceuponachef.com/recipes/restaurant-style-pan-seared-salmon.html">Restaurant-Style Pan Seared Salmon</a>. Macros are estimates.'
+      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/garlic-butter-shrimp/">Garlic Butter Shrimp</a>. Macros are estimates.'
     },
     {
-      id:"steaksauce", title:"Steak with Red Wine Pan Sauce", kind:"stretch", time:"~30 min",
-      tag:"Tonight's technique on your favourite protein. Sear the steak, then build a real deglazed sauce in the same pan.",
-      cal:770, protein:47, fat:59, carb:5,
+      id:"steaksalsa", title:"Steak & Fresh Salsa Bowl", kind:"stretch", time:"~25 min",
+      tag:"Tonight's knife lesson on your favourite protein. The salsa is pure dicing, no new cooking, so all your focus goes on the cut.",
+      cal:640, protein:48, fat:45, carb:12,
       ingredients:[
-        "8 oz New York strip steak","1 tbsp neutral oil","2 tbsp cold butter (kept in the fridge until you need it)",
-        "1 shallot or ¼ small onion, finely chopped","¼ cup red wine (or beef broth)","Salt, pepper","A sprig of thyme, if you have it"
+        "1 steak, ~6 oz",
+        "1 tbsp neutral oil",
+        "1 ripe tomato",
+        "¼ red onion",
+        "½ jalapeño, optional (seeds out for less heat)",
+        "Small handful cilantro",
+        "½ avocado",
+        "Juice of ½ lime, salt, pepper"
       ],
       steps:[
-        "Sear the steak exactly like your usual: dry it, salt and pepper, 4 min on one side, 3–4 on the other for medium-rare. Move it to a plate to rest.",
-        "Lower the heat to medium. Add the shallot to the hot pan (the brown bits on the bottom are the fond — that's your flavour). Stir 1 min until soft.",
-        "Pour in the wine or broth. It will bubble hard. Scrape the bottom with a spoon so all the browned bits lift and dissolve — that's deglazing.",
-        "Let it simmer and reduce by half, about 2–3 min, until it looks slightly syrupy. Add thyme if using.",
-        "Take the pan OFF the heat. Drop in the cold butter and swirl the pan until it melts into a glossy sauce — off the heat so it stays creamy, not greasy. This is mounting with butter.",
-        "Slice the rested steak and spoon the sauce over."
+        "Make the salsa first. The goal is even ¼-inch dice so every bite has a little of everything. Halve the tomato, scoop out the watery seeds, slice into strips, then cross-cut into small squares.",
+        "Dice the onion the same size: slice one way, then the other. Finely chop the jalapeño and cilantro. Tip it all into a bowl with the lime juice and a pinch of salt, and let it sit while you cook.",
+        "Pat the steak dry, season with salt and pepper. Heat the pan medium-high with the oil, sear 4 min, flip, 3–4 min more for medium-rare. Rest it 5 min.",
+        "Slice the steak against the grain into strips, then cut the strips into even cubes — the same size as your salsa, so the bowl eats consistently.",
+        "Build the bowl: steak, a big spoon of salsa, sliced avocado. Squeeze over more lime and season."
       ],
-      why:"Every seared protein leaves a fond. Learn to deglaze it and mount the sauce with cold butter and you can build a sauce for anything — chicken, pork, mushrooms — with whatever liquid is around. This one move unlocks dozens of dinners.",
-      src:'Rewritten from Bowl of Delicious, <a href="https://www.bowlofdelicious.com/perfect-pan-seared-steak-with-browned-butter-pan-sauce/">Pan-Seared Steak with Pan Sauce</a>. Macros are estimates.'
+      why:"Even dice is the quiet skill under everything ahead — salsa, stir-fry, mirepoix, hash. Same-size pieces cook at the same rate and pile neatly on a fork. Get the cut now and every sauté you ever attempt starts from a better place.",
+      src:'Salsa from Downshiftology, <a href="https://downshiftology.com/recipes/pico-de-gallo/">Pico de Gallo</a>; steak method from <a href="https://natashaskitchen.com/pan-seared-steak/">NatashasKitchen</a>. Macros are estimates.'
     },
     {
-      id:"chicksauce", title:"Chicken Thighs with Lemon-Butter Pan Sauce", kind:"stretch", time:"~30 min",
-      tag:"The same pan-sauce move, gentler and brighter. Thighs are hard to overcook, so it's a forgiving place to practice.",
-      cal:530, protein:37, fat:41, carb:3,
+      id:"chickenbowl", title:"Cilantro-Lime Chicken Bowl", kind:"stretch", time:"~25 min",
+      tag:"The same cut a second time, on chicken. Even ¾-inch cubes cook through at one rate, with no dry corners.",
+      cal:500, protein:45, fat:30, carb:10,
       ingredients:[
-        "2 boneless skinless chicken thighs (~7 oz)","1 tbsp neutral oil","2 tbsp cold butter",
-        "1 garlic clove, finely chopped","Juice of ½ lemon + a little zest","Salt, pepper","A pinch of chopped parsley, if you have it"
+        "1 chicken breast, ~7 oz",
+        "1 tbsp neutral oil",
+        "Juice of 1 lime + a little zest",
+        "½ tsp each: cumin, chili powder, salt",
+        "1 garlic clove, finely chopped",
+        "A handful of cilantro, chopped",
+        "½ avocado and ¼ cucumber (or tomato), diced, to finish"
       ],
       steps:[
-        "Pat the thighs dry, season with salt and pepper. Heat the pan medium-high with the oil.",
-        "Sear smooth-side down 5–6 min until deep golden, flip, 4–5 min more until cooked through (no pink, juices clear). Move them to a plate.",
-        "Turn the heat to low. Add the garlic to the pan and stir 20 sec — don't let it burn.",
-        "Pour in the lemon juice and a splash of water. Scrape the browned bits off the bottom until they dissolve into the liquid — that's deglazing.",
-        "Off the heat, swirl in the cold butter until glossy. Stir in the zest and parsley.",
-        "Return the thighs to coat them in the sauce and serve."
+        "Cut the chicken into even ¾-inch cubes. Even is the whole point: same size means they all hit 165°F at the same moment, so none dry out waiting on the others.",
+        "Toss the cubes in a bowl with half the lime juice, the cumin, chili powder, salt, and garlic until coated.",
+        "Heat the pan medium-high with the oil. Add the chicken in one layer — don't crowd it. Leave it 2–3 min to brown, then stir and cook 3–4 min more until no pink remains and it reads 165°F.",
+        "Off the heat, squeeze in the rest of the lime, the zest, and the cilantro. Toss to coat.",
+        "Dice the avocado and cucumber the same size and scatter over the top. Eat as is, or over rice to make it bigger."
       ],
-      why:"It's the identical move from the steak — deglaze the fond, mount with butter — but acid (lemon) instead of wine. Seeing the same technique with two different liquids is how you stop following recipes and start improvising.",
-      src:'Rewritten from NatashasKitchen, <a href="https://natashaskitchen.com/lemon-pepper-chicken/">Lemon Pepper Chicken</a>. Macros are estimates.'
+      why:"It's the identical cut from the steak bowl, on a new ingredient. Seeing one knife skill carry from beef to chicken to vegetables is how the technique stops being a recipe step and becomes something your hands just know.",
+      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/cilantro-lime-chicken/">Cilantro Lime Chicken</a>. Macros are estimates.'
     }
   ],
   history:[
+    {date:"Tuesday, June 23, 2026", dish:"Chicken Thighs with Lemon-Butter Pan Sauce", verdict:"liked", note:"First solo pan sauce — deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."},
     {date:"Before The Menu", dish:"Pan-seared steak", verdict:"liked", note:"His go-to — can sear a single protein in a pan."},
     {date:"Before The Menu", dish:"Bacon, low and slow", verdict:"liked", note:"Understands fat as a cooking medium."},
     {date:"Before The Menu", dish:"Fried eggs in bacon fat", verdict:"liked", note:"Cooks eggs in the rendered fat."}
@@ -265,7 +281,7 @@ const DATA = {
     {name:"Serious Eats", note:"Technique-first; explains the why. Best for learning a method — searing, pan sauces, emulsions."},
     {name:"Budget Bytes", note:"Cheap, simple, one-pan / one-pot. Dorm-kitchen friendly."},
     {name:"Downshiftology", note:"Clean one-pan dinners with clear steps."},
-    {name:"NYT Cooking", note:"Reliable and well-edited; some recipes paywalled."}
+    {name:"NatashasKitchen", note:"Reliable, well-photographed, beginner-clear. Great for proteins and the basics."}
   ]
 };
 
