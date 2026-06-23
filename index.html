@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Menu</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Menu">
+<meta name="theme-color" content="#1a120b">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgcng9IjM4IiBmaWxsPSIjY2Y2NjJkIi8+PHRleHQgeD0iOTAiIHk9IjEyOCIgZm9udC1zaXplPSIxMTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfjbM8L3RleHQ+PC9zdmc+">
+<style>
+  :root{
+    --bg:#16100a; --bg2:#1f1710; --card:#241a11; --card2:#2c2014;
+    --line:#3a2c1d; --text:#f3e9dd; --dim:#b59c82; --faint:#8a7560;
+    --accent:#e07a36; --accent2:#f0a35a; --green:#7fae6a; --stretch:#d98a3d;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  body{padding-bottom:84px}
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+  header{padding:calc(env(safe-area-inset-top) + 22px) 18px 14px;
+    background:linear-gradient(180deg,#1f1710,rgba(31,23,16,0));}
+  .wrap-h{max-width:680px;margin:0 auto}
+  .brand{font-size:30px;font-weight:800;letter-spacing:-.5px;margin:0;
+    background:linear-gradient(90deg,#f0a35a,#e07a36);-webkit-background-clip:text;
+    background-clip:text;color:transparent}
+  .sub{color:var(--dim);font-size:14px;margin-top:3px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .rung{background:var(--card2);border:1px solid var(--line);color:var(--accent2);
+    font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px}
+  .view{display:none}
+  .view.on{display:block}
+  /* technique banner */
+  .tech{margin:14px 0 4px;background:linear-gradient(135deg,#2c2014,#241a11);
+    border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:14px;padding:14px 16px}
+  .tech .k{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2);font-weight:700}
+  .tech .t{font-size:17px;font-weight:700;margin-top:3px}
+  .tech .d{color:var(--dim);font-size:13.5px;margin-top:4px;line-height:1.45}
+  /* cards */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:16px;margin-top:13px;cursor:pointer;transition:transform .08s,border-color .15s}
+  .card:active{transform:scale(.985);border-color:var(--accent)}
+  .badges{display:flex;gap:7px;align-items:center;margin-bottom:9px;flex-wrap:wrap}
+  .pill{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;letter-spacing:.3px}
+  .pill.comfort{background:rgba(127,174,106,.16);color:var(--green);border:1px solid rgba(127,174,106,.3)}
+  .pill.stretch{background:rgba(224,122,54,.16);color:var(--stretch);border:1px solid rgba(224,122,54,.35)}
+  .pill.time{background:var(--card2);color:var(--dim);border:1px solid var(--line)}
+  .card h2{font-size:18.5px;margin:0 0 5px;font-weight:700;line-height:1.25}
+  .card .tag{color:var(--dim);font-size:13.5px;line-height:1.45;font-style:italic}
+  .macros{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+  .macro{display:flex;flex-direction:column}
+  .macro b{font-size:16px;font-weight:700}
+  .macro span{font-size:10.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px;margin-top:1px}
+  .chev{float:right;color:var(--accent);font-size:13px;font-weight:700;margin-top:2px}
+  /* detail */
+  #detail{position:fixed;inset:0;background:var(--bg);z-index:50;overflow-y:auto;
+    transform:translateX(100%);transition:transform .22s ease;padding-bottom:40px}
+  #detail.on{transform:translateX(0)}
+  .back{position:sticky;top:0;background:rgba(22,16,10,.92);backdrop-filter:blur(8px);
+    padding:calc(env(safe-area-inset-top) + 12px) 18px 12px;border-bottom:1px solid var(--line);
+    font-weight:600;color:var(--accent2);font-size:15px;cursor:pointer;z-index:2}
+  .dwrap{max-width:680px;margin:0 auto;padding:18px}
+  .dwrap h1{font-size:24px;margin:6px 0 10px;line-height:1.2}
+  .dmacros{display:flex;gap:0;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;margin:14px 0}
+  .dmacros .m{flex:1;padding:12px 6px;text-align:center;border-right:1px solid var(--line)}
+  .dmacros .m:last-child{border-right:0}
+  .dmacros .m b{display:block;font-size:18px}
+  .dmacros .m span{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.5px}
+  .sec{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2);
+    font-weight:700;margin:22px 0 10px}
+  ul.ing{list-style:none;padding:0;margin:0}
+  ul.ing li{padding:9px 0 9px 26px;border-bottom:1px solid var(--line);position:relative;font-size:15px}
+  ul.ing li:before{content:"";position:absolute;left:6px;top:15px;width:7px;height:7px;
+    border-radius:50%;background:var(--accent)}
+  ol.steps{padding:0;margin:0;counter-reset:s;list-style:none}
+  ol.steps li{position:relative;padding:0 0 18px 42px;counter-increment:s;font-size:15px;line-height:1.55}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:-2px;width:28px;height:28px;
+    background:var(--accent);color:#1a120b;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-weight:800;font-size:14px}
+  ol.steps li:not(:last-child):after{content:"";position:absolute;left:13.5px;top:30px;bottom:6px;width:1.5px;background:var(--line)}
+  .why{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:8px}
+  .why .k{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent2);font-weight:700;margin-bottom:5px}
+  .why p{margin:0;color:var(--text);font-size:14px;line-height:1.5}
+  .src{margin-top:20px;font-size:12.5px;color:var(--faint);line-height:1.5}
+  .src a{color:var(--dim)}
+  /* history + resources */
+  .hrow{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px}
+  .hrow .d{font-size:15px;font-weight:600}
+  .hrow .v{font-size:12.5px;color:var(--dim);margin-top:3px}
+  .hrow .verdict{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:12px;margin-right:7px}
+  .verdict.liked{background:rgba(127,174,106,.16);color:var(--green)}
+  .verdict.loved{background:rgba(240,163,90,.18);color:var(--accent2)}
+  .verdict.no{background:rgba(180,90,80,.18);color:#d98a8a}
+  .verdict.fine{background:var(--card2);color:var(--dim)}
+  .note{color:var(--faint);font-size:13px;line-height:1.5;margin:14px 2px}
+  .rsrc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:10px}
+  .rsrc b{font-size:15px}
+  .rsrc p{margin:4px 0 0;color:var(--dim);font-size:13px;line-height:1.45}
+  .empty{color:var(--faint);text-align:center;padding:30px;font-size:14px}
+  /* tab bar */
+  nav{position:fixed;bottom:0;left:0;right:0;background:rgba(31,23,16,.95);
+    backdrop-filter:blur(12px);border-top:1px solid var(--line);
+    display:flex;padding-bottom:env(safe-area-inset-bottom);z-index:40}
+  nav button{flex:1;background:none;border:0;color:var(--faint);padding:11px 0 12px;
+    font-size:11px;font-weight:600;cursor:pointer;display:flex;flex-direction:column;
+    align-items:center;gap:3px;font-family:inherit}
+  nav button .ic{font-size:21px;line-height:1}
+  nav button.on{color:var(--accent2)}
+  h3.day{font-size:13px;color:var(--faint);text-transform:uppercase;letter-spacing:1px;margin:18px 2px 0;font-weight:700}
+</style>
+</head>
+<body>
+
+<header><div class="wrap-h">
+  <h1 class="brand">The Menu</h1>
+  <div class="sub" id="subhead"></div>
+</div></header>
+
+<main class="wrap">
+  <section id="today" class="view on"></section>
+  <section id="history" class="view"></section>
+  <section id="resources" class="view"></section>
+</main>
+
+<div id="detail"></div>
+
+<nav>
+  <button data-v="today" class="on"><span class="ic">🍳</span>Today</button>
+  <button data-v="history"><span class="ic">📖</span>History</button>
+  <button data-v="resources"><span class="ic">🔖</span>Resources</button>
+</nav>
+
+<script>
+/* ============================================================
+   DATA — the nightly task rewrites this block each evening.
+   Everything below DATA is the renderer and stays fixed.
+   ============================================================ */
+const DATA = {
+  date: "Tuesday, June 23, 2026",
+  rung: "Rung 1 · single protein, one pan",
+  technique: {
+    name: "The pan sauce",
+    blurb: "You already sear a steak. Today you turn the browned bits left in the pan — the fond — into a glossy sauce. Biggest flavour payoff for the least new effort in cooking. It's in Option 3."
+  },
+  options: [
+    {
+      id:"strip", title:"Pan-Seared New York Strip", kind:"comfort", time:"~25 min",
+      tag:"Your dish, done with intent. The point is a repeatable crust and a real rest.",
+      cal:690, protein:61, fat:48, carb:1,
+      ingredients:[
+        "8 oz New York strip steak","1 tbsp neutral oil (canola/avocado)","Salt, black pepper"
+      ],
+      steps:[
+        "Take the steak out 30 min early. Pat it bone-dry with paper towel — dry meat browns, wet meat steams.",
+        "Salt both sides generously, then pepper.",
+        "Heat the pan on medium-high 2–3 min until a drop of water skitters. Add oil, swirl to coat.",
+        "Lay the steak down away from you. Don't touch it for 4 min — that's the crust forming.",
+        "Flip once. 3–4 more min for medium-rare (the centre should give like the pad below your thumb).",
+        "Move to a plate and rest 5 min before cutting. Resting keeps the juice in the steak, not on the board."
+      ],
+      why:null,
+      src:'Rewritten from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-steak/">Pan Seared Steak</a>.'
+    },
+    {
+      id:"thighs", title:"One-Skillet Seasoned Chicken Thighs", kind:"comfort", time:"~25 min",
+      tag:"Same skill as the steak, new protein. Boneless thighs are forgiving — hard to dry out.",
+      cal:540, protein:52, fat:36, carb:2,
+      ingredients:[
+        "2 boneless skinless chicken thighs (~7 oz)","1 tbsp oil",
+        "½ tsp each: garlic powder, paprika, salt; pinch of pepper"
+      ],
+      steps:[
+        "Pat the thighs dry. Toss with the spices to coat.",
+        "Heat the pan medium-high, add oil.",
+        "Lay thighs smooth-side down. Sear 5–6 min until deep golden — don't move them early.",
+        "Flip, 4–5 min more. Cut into the thickest one: juices run clear, no pink.",
+        "Rest 2 min. (Thighs are best at 175°F — far more forgiving than breast.)"
+      ],
+      why:null,
+      src:'Rewritten from <a href="https://cooknshare.com/recipe/recipe/easy-one-skillet-chicken-thighs-30-minutes/">Easy One-Skillet Chicken Thighs</a> (cooknshare) and Two Peas &amp; Their Pod.'
+    },
+    {
+      id:"pansauce", title:"Steak with Garlic-Butter Pan Sauce", kind:"stretch", time:"~30 min",
+      tag:"The technique of the day. Turn the fond left in the pan into a glossy sauce.",
+      cal:890, protein:62, fat:71, carb:2,
+      ingredients:[
+        "8 oz New York strip (as in Option 1)","1 tbsp oil + 2 tbsp butter",
+        "2 garlic cloves, smashed","Salt, pepper","A sprig of thyme or rosemary, if you have it"
+      ],
+      steps:[
+        "Sear and flip the steak exactly like Option 1. In the last 1–2 min, drop in the butter, garlic, and herb.",
+        "Tilt the pan so the butter pools at the low edge. Spoon it over the steak again and again for ~1 min — this is basting; it finishes the top and layers in flavour.",
+        "Pull the steak to rest. Don't wash the pan — those brown bits are the sauce.",
+        "Off the heat (pan still hot), the melted butter + garlic + fond is your sauce. If it looks dry, add a splash of water and scrape the bottom with a spoon until it lifts into a glaze.",
+        "Slice the rested steak and spoon the pan sauce over."
+      ],
+      why:"Every seared protein leaves a fond. Learn to deglaze it and you can build a sauce for anything — chicken, pork, mushrooms — with whatever liquid is around. This one move unlocks dozens of dinners.",
+      src:'Rewritten from <a href="https://www.cookingclassy.com/pan-seared-steak-with-garlic-butter/">Pan-Seared Steak with Garlic Butter</a> (Cooking Classy) and NatashasKitchen.'
+    },
+    {
+      id:"chickrice", title:"One-Pan Chicken & Rice", kind:"stretch", time:"~40 min",
+      tag:"Your first real use of the pot: brown a protein, then cook the rice in the same pot so it drinks up the flavour.",
+      cal:780, protein:57, fat:36, carb:50,
+      ingredients:[
+        "2 boneless skinless chicken thighs (~7 oz)","⅓ cup long-grain white rice (dry)",
+        "1 cup chicken broth","½ small onion, chopped; 1 garlic clove, chopped",
+        "1 tbsp oil; salt, pepper"
+      ],
+      steps:[
+        "Season chicken with salt and pepper. In the pot on medium-high, brown both sides in the oil, ~4 min a side. Take it out — it's not fully cooked yet, it finishes later.",
+        "Lower to medium. Add the onion to the same pot, cook 3–4 min until soft; add garlic for 30 sec.",
+        "Add the dry rice and stir 1 min so it toasts. Pour in the broth and scrape the bottom of the pot.",
+        "Nestle the chicken back in. Bring to a simmer, then lid on, heat low, 18 min. Don't lift the lid — that's how rice steams.",
+        "Off the heat, lid still on, 5 min. Fluff with a fork and check the chicken is cooked through."
+      ],
+      why:"\"Sear, remove, build, return\" is the backbone of one-pot cooking. Master it here and braises, risottos, and stews are all the same move, slowed down.",
+      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/one-pan-chicken-and-rice/">Best Chicken and Rice (One Pan)</a>.'
+    }
+  ],
+  history:[
+    {date:"Before The Menu", dish:"Pan-seared steak", verdict:"liked", note:"His go-to — can sear a single protein in a pan."},
+    {date:"Before The Menu", dish:"Bacon, low and slow", verdict:"liked", note:"Understands fat as a cooking medium."},
+    {date:"Before The Menu", dish:"Fried eggs in bacon fat", verdict:"liked", note:"Cooks eggs in the rendered fat."}
+  ],
+  resources:[
+    {name:"Serious Eats", note:"Technique-first; explains the why. Best for learning a method — searing, pan sauces, emulsions."},
+    {name:"Budget Bytes", note:"Cheap, simple, one-pan / one-pot. Dorm-kitchen friendly."},
+    {name:"Downshiftology", note:"Clean one-pan dinners with clear steps."},
+    {name:"NYT Cooking", note:"Reliable and well-edited; some recipes paywalled."}
+  ]
+};
+
+/* ============================================================
+   RENDERER — fixed.
+   ============================================================ */
+const $ = s => document.querySelector(s);
+document.getElementById('subhead').innerHTML =
+  `<span>${DATA.date}</span><span class="rung">${DATA.rung}</span>`;
+
+// TODAY
+(function(){
+  let h = `<div class="tech"><div class="k">Technique of the day</div>
+    <div class="t">${DATA.technique.name}</div>
+    <div class="d">${DATA.technique.blurb}</div></div>`;
+  DATA.options.forEach(o=>{
+    h += `<div class="card" data-id="${o.id}">
+      <span class="chev">View ›</span>
+      <div class="badges">
+        <span class="pill ${o.kind}">${o.kind==='stretch'?'STRETCH':'COMFORT'}</span>
+        <span class="pill time">${o.time}</span>
+      </div>
+      <h2>${o.title}</h2>
+      <div class="tag">${o.tag}</div>
+      <div class="macros">
+        <div class="macro"><b>${o.cal}</b><span>cal</span></div>
+        <div class="macro"><b>${o.protein}g</b><span>protein</span></div>
+        <div class="macro"><b>${o.fat}g</b><span>fat</span></div>
+        <div class="macro"><b>${o.carb}g</b><span>carb</span></div>
+      </div></div>`;
+  });
+  $('#today').innerHTML = h;
+})();
+
+// HISTORY
+(function(){
+  let h = `<h3 class="day" style="margin-top:20px">Cooked so far</h3>`;
+  if(!DATA.history.length){ h += `<div class="empty">Nothing logged yet. Cook something tonight and tell Claude how it went.</div>`; }
+  DATA.history.forEach(r=>{
+    h += `<div class="hrow"><div class="d">${r.dish}</div>
+      <div class="v"><span class="verdict ${r.verdict}">${r.verdict}</span>${r.date} · ${r.note}</div></div>`;
+  });
+  h += `<p class="note">Logging is conversational: each night Claude asks what you made and whether you liked it. One line back and tomorrow's menu bends toward it.</p>`;
+  $('#history').innerHTML = h;
+})();
+
+// RESOURCES
+(function(){
+  let h = `<h3 class="day" style="margin-top:20px">Where the recipes come from</h3>`;
+  DATA.resources.forEach(r=>{
+    h += `<div class="rsrc"><b>${r.name}</b><p>${r.note}</p></div>`;
+  });
+  h += `<p class="note">Every recipe on the menu is sourced from a vetted site, rewritten to your level, with macros estimated per ingredient and the original cited on its page.</p>`;
+  $('#resources').innerHTML = h;
+})();
+
+// DETAIL view
+function openDetail(id){
+  const o = DATA.options.find(x=>x.id===id);
+  let h = `<div class="back" onclick="closeDetail()">‹ Back to menu</div><div class="dwrap">
+    <div class="badges"><span class="pill ${o.kind}">${o.kind==='stretch'?'STRETCH':'COMFORT'}</span>
+    <span class="pill time">${o.time}</span></div>
+    <h1>${o.title}</h1>
+    <div class="dmacros">
+      <div class="m"><b>${o.cal}</b><span>cal</span></div>
+      <div class="m"><b>${o.protein}g</b><span>protein</span></div>
+      <div class="m"><b>${o.fat}g</b><span>fat</span></div>
+      <div class="m"><b>${o.carb}g</b><span>carb</span></div>
+    </div>
+    <div class="sec">Ingredients · 1 serving</div>
+    <ul class="ing">${o.ingredients.map(i=>`<li>${i}</li>`).join('')}</ul>
+    <div class="sec">Steps</div>
+    <ol class="steps">${o.steps.map(s=>`<li>${s}</li>`).join('')}</ol>`;
+  if(o.why){ h += `<div class="why"><div class="k">Why it matters</div><p>${o.why}</p></div>`; }
+  h += `<div class="src">Macros are a per-serving estimate from standard ingredient values — treat as a ballpark.<br>${o.src}</div></div>`;
+  const d = $('#detail'); d.innerHTML = h; d.classList.add('on'); d.scrollTop=0;
+}
+function closeDetail(){ $('#detail').classList.remove('on'); }
+
+document.addEventListener('click', e=>{
+  const card = e.target.closest('.card');
+  if(card) openDetail(card.dataset.id);
+});
+
+// TABS
+document.querySelectorAll('nav button').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    document.querySelectorAll('nav button').forEach(x=>x.classList.remove('on'));
+    document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    document.getElementById(b.dataset.v).classList.add('on');
+    window.scrollTo(0,0);
+  });
+});
+</script>
+</body>
+</html>
