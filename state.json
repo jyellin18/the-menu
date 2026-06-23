@@ -1,0 +1,32 @@
+{
+  "rung_floor": 1,
+  "next_stretch_rung": 3,
+  "ladder": [
+    "1. Apply heat to a single protein in a pan (sear steak, cook chicken).",
+    "2. Fat as a medium + basting; rest and doneness by feel/temp.",
+    "3. Pan sauce off the fond (deglaze, mount with butter).",
+    "4. Knife basics — even dice.",
+    "5. Saute aromatics + vegetables to the right point.",
+    "6. Cook a starch in the pot (rice, pasta, potatoes) to correct texture.",
+    "7. Time a full plate: protein + veg + starch finishing together.",
+    "8. One-pot builds and braises.",
+    "9. Emulsions, reductions, sauces from scratch."
+  ],
+  "constraints": {
+    "equipment": "one pan + one pot, stovetop only, no oven",
+    "max_time_min": 60,
+    "protein_every_meal": true,
+    "health": "moderately healthy, light bar"
+  },
+  "dislikes": ["mayo", "pickles"],
+  "likes": ["steak", "bacon", "eggs", "protein-forward"],
+  "history": [
+    {"date": "pre", "dish": "Pan-seared steak", "made": true, "verdict": "liked", "note": "go-to; sears a single protein"},
+    {"date": "pre", "dish": "Bacon, low and slow", "made": true, "verdict": "liked", "note": "understands fat as a medium"},
+    {"date": "pre", "dish": "Fried eggs in bacon fat", "made": true, "verdict": "liked", "note": "cooks eggs in rendered fat"}
+  ],
+  "awaiting_feedback": {
+    "date": "2026-06-23",
+    "options": ["Pan-Seared New York Strip", "One-Skillet Seasoned Chicken Thighs", "Steak with Garlic-Butter Pan Sauce", "One-Pan Chicken & Rice"]
+  }
+}
