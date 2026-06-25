@@ -174,37 +174,58 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Wednesday, June 24, 2026",
+  date: "Friday, June 26, 2026",
   rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
     name: "The even dice",
-    blurb: "You can sear, cook in fat, and finish a pan sauce. Tonight, the knife. Cut your ingredients to the same size and they cook at the same rate, brown evenly, and pile neatly on a fork. It's the quiet skill under every salsa, stir-fry, and sauté ahead. Both stretches below drill the exact same cut, once on beef and once on chicken."
+    blurb: "You can sear, work in fat, and finish a pan sauce. Tonight the lesson moves to the cutting board. Cut everything to the same size and it cooks at the same rate, browns evenly, and sits neatly on a fork. Same-size pieces are the quiet skill under every salsa, sauté, and stir-fry coming up. The stretch puts your knife to work on a fresh pico de gallo, where the cut is the whole dish."
   },
   options: [
     {
-      id:"steakeggs", title:"Steak & Eggs", kind:"comfort", time:"~20 min",
-      tag:"Two things you already nail — a seared steak and eggs cooked in the fat — on one plate. Pure confidence food.",
-      cal:610, protein:56, fat:42, carb:2,
+      id:"steakgb", title:"Steak with Garlic-Butter Baste", kind:"comfort", time:"~20 min",
+      tag:"Your go-to steak, dressed up. Sear it the way you already do, then spoon foaming garlic butter over the top — the basting move you used on bacon-fat eggs, now on beef.",
+      cal:580, protein:47, fat:43, carb:1,
       ingredients:[
         "1 steak, ~6 oz (sirloin, strip, or whatever's on sale)",
-        "2 large eggs",
-        "1 tbsp neutral oil, plus a pat of butter",
+        "1 tbsp neutral oil",
+        "1.5 tbsp butter",
+        "2 garlic cloves, smashed",
         "Salt and pepper"
       ],
       steps:[
         "Pull the steak out 20 min early and pat it bone-dry. Season both sides hard with salt and pepper.",
         "Heat the pan medium-high 2–3 min, add the oil, swirl to coat.",
-        "Sear the steak 4 min on the first side without moving it, flip, 3–4 min more for medium-rare. Move it to a plate to rest.",
-        "Rendered fat and brown bits are left in the pan — that's flavour. Drop the heat to medium-low and add a pat of butter.",
-        "Crack the eggs into the fat. Fry 2–3 min until the whites set and the edges crisp, spooning a little fat over the tops — just like your bacon-fat eggs.",
-        "Slice the rested steak, slide the eggs alongside, and season the eggs with a pinch of salt."
+        "Sear the steak 4 min on the first side without moving it, then flip and give it 3–4 min more for medium-rare.",
+        "Drop the heat to medium-low. Add the butter and smashed garlic. As the butter foams, tilt the pan and spoon it over the steak again and again for about a minute — that's basting.",
+        "Move the steak to a plate and rest it 5 min so the juices settle, then slice against the grain and spoon the garlic butter over."
       ],
       why:null,
-      src:'Steak method from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-steak/">Pan Seared Steak</a>. Macros are estimates.'
+      src:'Steak method from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-steak/">Pan Seared Steak</a>; garlic-butter baste from Cooking Classy, <a href="https://www.cookingclassy.com/pan-seared-steak-with-garlic-butter/">Pan Seared Steak with Garlic Butter</a>. Macros are estimates.'
+    },
+    {
+      id:"salmonlb", title:"Pan-Seared Salmon with Lemon Butter", kind:"comfort", time:"~15 min",
+      tag:"Lean, fast, and squarely in your skill set — a crisp sear plus a one-minute lemon-butter pan sauce, the exact move from your chicken-thigh night.",
+      cal:470, protein:35, fat:36, carb:2,
+      ingredients:[
+        "1 salmon fillet, ~6 oz, skin on",
+        "1 tbsp neutral oil",
+        "1.5 tbsp butter",
+        "Juice of ½ lemon",
+        "Salt, pepper, a pinch of parsley if you have it"
+      ],
+      steps:[
+        "Pat the salmon very dry and season both sides with salt and pepper. Dry fish sears; wet fish steams.",
+        "Heat the pan medium-high with the oil. Lay the fillet in skin-side down, pressing gently for 10 sec so it stays flat.",
+        "Cook undisturbed 4–5 min until the skin is crisp and the flesh has turned pale most of the way up. Flip and give it 2–3 min more.",
+        "Move the salmon to a plate. Drop the heat to medium-low, add the butter and lemon juice, and swirl the pan to pull up the browned bits — that's your quick pan sauce.",
+        "Spoon the lemon butter over the salmon and scatter parsley on top."
+      ],
+      why:null,
+      src:'Rewritten from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-salmon-with-lemon-butter/">Pan-Seared Salmon with Lemon Butter</a>. Macros are estimates.'
     },
     {
       id:"garlicshrimp", title:"Garlic Butter Shrimp", kind:"comfort", time:"~10 min",
-      tag:"Fast, lean, protein-forward — and secretly a pan sauce. Butter, garlic, a squeeze of lemon: the move you just learned, in ten minutes.",
+      tag:"Ten minutes, lean and protein-forward, and secretly a pan sauce: butter, garlic, a squeeze of lemon. Pure confidence food on a busy night.",
       cal:370, protein:36, fat:24, carb:3,
       ingredients:[
         "6 oz shrimp, peeled and deveined (thawed if frozen, patted dry)",
@@ -224,51 +245,28 @@ const DATA = {
       src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/garlic-butter-shrimp/">Garlic Butter Shrimp</a>. Macros are estimates.'
     },
     {
-      id:"steaksalsa", title:"Steak & Fresh Salsa Bowl", kind:"stretch", time:"~25 min",
-      tag:"Tonight's knife lesson on your favourite protein. The salsa is pure dicing, no new cooking, so all your focus goes on the cut.",
-      cal:640, protein:48, fat:45, carb:12,
+      id:"chickenpico", title:"Seared Chicken with Fresh Pico de Gallo", kind:"stretch", time:"~25 min",
+      tag:"Tonight's knife lesson. The pico is nothing but dicing — no new cooking — so all your focus goes on one thing: cutting everything to the same small, even square.",
+      cal:500, protein:44, fat:30, carb:13,
       ingredients:[
-        "1 steak, ~6 oz",
+        "1 chicken breast, ~7 oz",
         "1 tbsp neutral oil",
         "1 ripe tomato",
-        "¼ red onion",
+        "¼ white or red onion",
         "½ jalapeño, optional (seeds out for less heat)",
         "Small handful cilantro",
         "½ avocado",
         "Juice of ½ lime, salt, pepper"
       ],
       steps:[
-        "Make the salsa first. The goal is even ¼-inch dice so every bite has a little of everything. Halve the tomato, scoop out the watery seeds, slice into strips, then cross-cut into small squares.",
+        "Make the pico first so it can sit. The goal is an even ¼-inch dice so every bite has a little of everything. Halve the tomato, scoop out the watery seeds, slice into strips, then cross-cut into small squares.",
         "Dice the onion the same size: slice one way, then the other. Finely chop the jalapeño and cilantro. Tip it all into a bowl with the lime juice and a pinch of salt, and let it sit while you cook.",
-        "Pat the steak dry, season with salt and pepper. Heat the pan medium-high with the oil, sear 4 min, flip, 3–4 min more for medium-rare. Rest it 5 min.",
-        "Slice the steak against the grain into strips, then cut the strips into even cubes — the same size as your salsa, so the bowl eats consistently.",
-        "Build the bowl: steak, a big spoon of salsa, sliced avocado. Squeeze over more lime and season."
+        "Pat the chicken dry and season with salt and pepper. Heat the pan medium-high with the oil and sear the breast 5–6 min per side until golden and it reads 165°F in the thickest part. Rest it 5 min.",
+        "Slice the chicken, then cut it into even cubes the same size as your pico — so the plate eats consistently, no big chunk against tiny ones.",
+        "Plate the chicken, spoon over a big pile of pico, and add sliced avocado. Squeeze more lime and season to taste."
       ],
-      why:"Even dice is the quiet skill under everything ahead — salsa, stir-fry, mirepoix, hash. Same-size pieces cook at the same rate and pile neatly on a fork. Get the cut now and every sauté you ever attempt starts from a better place.",
-      src:'Salsa from Downshiftology, <a href="https://downshiftology.com/recipes/pico-de-gallo/">Pico de Gallo</a>; steak method from <a href="https://natashaskitchen.com/pan-seared-steak/">NatashasKitchen</a>. Macros are estimates.'
-    },
-    {
-      id:"chickenbowl", title:"Cilantro-Lime Chicken Bowl", kind:"stretch", time:"~25 min",
-      tag:"The same cut a second time, on chicken. Even ¾-inch cubes cook through at one rate, with no dry corners.",
-      cal:500, protein:45, fat:30, carb:10,
-      ingredients:[
-        "1 chicken breast, ~7 oz",
-        "1 tbsp neutral oil",
-        "Juice of 1 lime + a little zest",
-        "½ tsp each: cumin, chili powder, salt",
-        "1 garlic clove, finely chopped",
-        "A handful of cilantro, chopped",
-        "½ avocado and ¼ cucumber (or tomato), diced, to finish"
-      ],
-      steps:[
-        "Cut the chicken into even ¾-inch cubes. Even is the whole point: same size means they all hit 165°F at the same moment, so none dry out waiting on the others.",
-        "Toss the cubes in a bowl with half the lime juice, the cumin, chili powder, salt, and garlic until coated.",
-        "Heat the pan medium-high with the oil. Add the chicken in one layer — don't crowd it. Leave it 2–3 min to brown, then stir and cook 3–4 min more until no pink remains and it reads 165°F.",
-        "Off the heat, squeeze in the rest of the lime, the zest, and the cilantro. Toss to coat.",
-        "Dice the avocado and cucumber the same size and scatter over the top. Eat as is, or over rice to make it bigger."
-      ],
-      why:"It's the identical cut from the steak bowl, on a new ingredient. Seeing one knife skill carry from beef to chicken to vegetables is how the technique stops being a recipe step and becomes something your hands just know.",
-      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/cilantro-lime-chicken/">Cilantro Lime Chicken</a>. Macros are estimates.'
+      why:"Even dice is the quiet skill under everything ahead — salsa, stir-fry, mirepoix, hash. Same-size pieces cook at the same rate and pile neatly on a fork. In a raw pico there's nowhere to hide: the cut is the whole dish, so it's the perfect place to drill it. Get it now and every sauté you ever attempt starts from a better place.",
+      src:'Pico from Downshiftology, <a href="https://downshiftology.com/recipes/pico-de-gallo/">Pico de Gallo</a>; chicken method from NatashasKitchen, <a href="https://natashaskitchen.com/pan-seared-steak/">pan-searing basics</a>. Macros are estimates.'
     }
   ],
   history:[
@@ -281,7 +279,8 @@ const DATA = {
     {name:"Serious Eats", note:"Technique-first; explains the why. Best for learning a method — searing, pan sauces, emulsions."},
     {name:"Budget Bytes", note:"Cheap, simple, one-pan / one-pot. Dorm-kitchen friendly."},
     {name:"Downshiftology", note:"Clean one-pan dinners with clear steps."},
-    {name:"NatashasKitchen", note:"Reliable, well-photographed, beginner-clear. Great for proteins and the basics."}
+    {name:"NatashasKitchen", note:"Reliable, well-photographed, beginner-clear. Great for proteins and the basics."},
+    {name:"Cooking Classy", note:"Approachable, well-tested recipes; strong on classic proteins and finishes."}
   ]
 };
 

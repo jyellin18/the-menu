@@ -5,7 +5,7 @@
     "1. Apply heat to a single protein in a pan (sear steak, cook chicken).",
     "2. Fat as a medium + basting; rest and doneness by feel/temp.",
     "3. Pan sauce off the fond (deglaze, mount with butter).",
-    "4. Knife basics — even dice.",
+    "4. Knife basics \u2014 even dice.",
     "5. Saute aromatics + vegetables to the right point.",
     "6. Cook a starch in the pot (rice, pasta, potatoes) to correct texture.",
     "7. Time a full plate: protein + veg + starch finishing together.",
@@ -55,16 +55,16 @@
       "dish": "Chicken Thighs with Lemon-Butter Pan Sauce",
       "made": true,
       "verdict": "liked",
-      "note": "First solo pan sauce — deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."
+      "note": "First solo pan sauce \u2014 deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."
     }
   ],
   "awaiting_feedback": {
-    "date": "2026-06-24",
+    "date": "2026-06-26",
     "options": [
-      "Steak & Eggs",
+      "Steak with Garlic-Butter Baste",
+      "Pan-Seared Salmon with Lemon Butter",
       "Garlic Butter Shrimp",
-      "Steak & Fresh Salsa Bowl",
-      "Cilantro-Lime Chicken Bowl"
+      "Seared Chicken with Fresh Pico de Gallo"
     ]
   }
 }
