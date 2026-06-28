@@ -174,103 +174,105 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Saturday, June 27, 2026",
+  date: "Monday, June 29, 2026",
   rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
-    name: "The even dice (take two)",
-    blurb: "Yesterday the lesson moved to the cutting board with a fresh pico. Tonight we drill the same skill once more, because a knife move sticks through reps, not a single try. Same goal: cut everything to one small, even size so it cooks evenly and sits neatly on a fork. This time the canvas is a steak salsa — your favorite protein, a quick raw salsa where the cut is the whole dish. Knock this out and the dice is yours for good."
+    name: "The even dice",
+    blurb: "We keep drilling the dice because it shows up everywhere downstream: salsa, sauté, stir-fry, hash. The whole idea is simple: cut everything to one small, even size so the pieces cook at the same rate and sit neatly on a fork. Tonight's canvas is a pico de gallo for steak tacos, a raw salsa where the cut is the entire dish and there's nowhere to hide a sloppy chunk. Slow down, aim for an even quarter-inch square, and let the knife do the work."
   },
   options: [
     {
-      id:"steakbites", title:"Garlic Butter Steak Bites", kind:"comfort", time:"~15 min",
-      tag:"Your steak, in bite-size form — a hot, fast sear, then foaming garlic butter spooned over. Pure confidence food, and squarely in your wheelhouse.",
-      cal:560, protein:46, fat:40, carb:2,
+      id:"herbbuttersteak", title:"Garlic-Herb Butter Steak", kind:"comfort", time:"~20 min",
+      tag:"Your favorite move, slowed down to a whole steak: a hard sear, then foaming garlic-herb butter spooned over the top. Confidence food, squarely in your wheelhouse.",
+      cal:580, protein:46, fat:46, carb:2,
       ingredients:[
-        "6 oz sirloin or strip steak, cut into ~1-inch cubes",
+        "6 oz strip or sirloin steak, about 1 inch thick",
         "1 tbsp neutral oil",
         "1.5 tbsp butter",
         "2 garlic cloves, smashed",
-        "Salt, pepper, a pinch of parsley if you have it"
+        "A sprig of thyme or rosemary if you have it",
+        "Salt and pepper"
       ],
       steps:[
-        "Pat the steak cubes very dry and season hard with salt and pepper. Dry meat browns; wet meat steams.",
-        "Heat the pan medium-high 2–3 min, add the oil, and swirl to coat. It should shimmer.",
-        "Add the cubes in one loose layer — don't crowd them. Sear undisturbed about 2 min, then toss and give 1–2 min more until browned but still pink inside.",
-        "Drop the heat to medium-low. Add the butter and smashed garlic, and as the butter foams, tilt the pan and spoon it over the bites for about a minute — that's basting.",
-        "Pull the pan off the heat, scatter parsley over, and eat right away while they're hot."
+        "Pull the steak out 15 min early, pat it bone-dry, and season both sides hard with salt and pepper. Dry meat browns; wet meat steams.",
+        "Heat the pan medium-high 2–3 min, add the oil, and swirl until it shimmers.",
+        "Lay the steak in away from you and sear undisturbed 3–4 min until a deep brown crust forms, then flip and give 3 min more for medium-rare (125–130°F in the center).",
+        "Drop the heat to medium-low. Add the butter, smashed garlic, and herb sprig. As the butter foams, tilt the pan and spoon it over the steak for about a minute — that's basting.",
+        "Move the steak to a plate and rest it 5 min so the juices settle, then slice against the grain and pour the pan butter over the top."
       ],
       why:null,
-      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/garlic-butter-steak-bites/">Garlic Butter Steak Bites</a>. Macros are estimates.'
+      src:'Rewritten from Damn Delicious, <a href="https://damndelicious.net/2016/06/23/perfect-steak-wtih-garlic-butter/">The Perfect Steak with Garlic Butter</a>. Macros are estimates.'
     },
     {
-      id:"porkchop", title:"Pork Chop with Mustard Pan Sauce", kind:"comfort", time:"~20 min",
-      tag:"A new protein, the same move you already own: sear it hard, then build a quick pan sauce off the browned bits. Dijon and a splash of cream do the work.",
-      cal:520, protein:39, fat:38, carb:3,
+      id:"honeysoysalmon", title:"Honey-Soy Glazed Salmon", kind:"comfort", time:"~20 min",
+      tag:"A new, lean protein, the same skill you already own: sear it well, then build a quick glaze right in the pan. Sweet, savory, and on the lighter side.",
+      cal:520, protein:35, fat:30, carb:19,
       ingredients:[
-        "1 boneless pork chop, ~6 oz, about 1 inch thick",
+        "6 oz salmon fillet, skin on",
+        "1 tbsp olive oil",
+        "1 tbsp honey",
+        "1 tbsp soy sauce",
+        "1 garlic clove, finely chopped",
+        "Small splash of rice vinegar or lemon juice",
+        "Salt and pepper"
+      ],
+      steps:[
+        "Stir the honey, soy sauce, garlic, and vinegar together in a small bowl so the glaze is ready to go.",
+        "Pat the salmon very dry and season with salt and pepper. Dry fish is how you get a crust instead of steam.",
+        "Heat the pan medium-high with the oil. Lay the salmon in skin-side up and sear undisturbed 4–5 min until the bottom is golden and it releases on its own, then flip.",
+        "Cook 2–3 min more, until the fish flakes easily and is just opaque in the middle. Move it to a plate.",
+        "Drop the heat to medium, pour in the glaze, and let it bubble 1–2 min into a glossy syrup, scraping up any browned bits. Spoon it over the salmon."
+      ],
+      why:null,
+      src:'Rewritten from Sally\'s Baking Addiction, <a href="https://sallysbakingaddiction.com/honey-garlic-salmon/">Honey Garlic Soy Glazed Salmon</a>. Macros are estimates.'
+    },
+    {
+      id:"mushroomchx", title:"Chicken Breast with Mushroom Pan Sauce", kind:"comfort", time:"~30 min",
+      tag:"The pan-sauce move you cleared on rung 3, in a savory new key. Sear the chicken, then brown mushrooms in the same pan and build a sauce off the fond.",
+      cal:560, protein:54, fat:34, carb:6,
+      ingredients:[
+        "6 oz chicken breast",
         "1 tbsp neutral oil",
         "1 tbsp butter",
-        "1 tsp Dijon mustard",
-        "2 tbsp chicken broth (or water)",
+        "4 oz mushrooms, sliced",
+        "1 garlic clove, finely chopped",
+        "3 tbsp chicken broth (or water)",
         "1 tbsp cream or a splash of milk",
-        "Salt and pepper"
+        "Salt, pepper, a little thyme if you have it"
       ],
       steps:[
-        "Pull the chop out 15 min early, pat it bone-dry, and season both sides with salt and pepper.",
-        "Heat the pan medium-high with the oil until it shimmers. Lay the chop in and sear 3–4 min per side until golden and it reads 145°F in the center. Move it to a plate to rest.",
-        "Drop the heat to medium. Add the broth and scrape the browned bits off the bottom with a spoon — that fond is your flavor.",
-        "Stir in the Dijon and cream and let it bubble 1–2 min until it thickens just enough to coat a spoon. Swirl in the butter off the heat for shine.",
-        "Spoon the sauce over the rested chop and any juices that pooled on the plate."
+        "Pat the chicken dry and season both sides with salt and pepper. If the breast is thick, press it flatter with your hand so it cooks evenly.",
+        "Heat the pan medium-high with the oil. Sear the chicken 5–6 min per side until golden and cooked through (165°F). Move it to a plate.",
+        "Drop the heat to medium, add the butter and mushrooms, and let them sit a minute before stirring so they brown instead of stew. Cook 4–5 min until golden.",
+        "Add the garlic and stir 20 sec until fragrant. Pour in the broth and scrape the browned bits off the bottom — that fond is your flavor.",
+        "Stir in the cream and let it bubble 1–2 min until it lightly coats a spoon. Return the chicken and any juices, turn to coat, and spoon the sauce over."
       ],
       why:null,
-      src:'Pork chop method from Inspired Taste, <a href="https://www.inspiredtaste.net/37062/juicy-skillet-pork-chops/">Juicy Skillet Pork Chops</a>; mustard pan sauce from Happily From Scratch, <a href="https://www.ericajulson.com/seared-pork-chops-with-mustard-pan-sauce/">Seared Pork Chops with Mustard Pan Sauce</a>. Macros are estimates.'
+      src:'Rewritten from RecipeTin Eats, <a href="https://www.recipetineats.com/chicken-breast-in-creamy-mushroom-sauce/">Chicken Breast in Creamy Mushroom Sauce</a>. Macros are estimates.'
     },
     {
-      id:"soygarlicchx", title:"Crispy Chicken Thighs, Soy-Garlic", kind:"comfort", time:"~25 min",
-      tag:"Sear chicken thighs until deep golden, then glaze them in a quick soy-garlic-honey pan sauce. A pan sauce in a new key — savory and a little sweet.",
-      cal:500, protein:39, fat:33, carb:9,
+      id:"steaktacos", title:"Steak Tacos with Pico de Gallo", kind:"stretch", time:"~30 min",
+      tag:"Tonight's knife drill. The steak is a move you own cold; the new work is the pico, where the only job is cutting tomato, onion, and jalapeño to one small, even square.",
+      cal:600, protein:46, fat:34, carb:31,
       ingredients:[
-        "2 boneless skinless chicken thighs, ~7 oz total",
+        "6 oz sirloin or flank steak",
         "1 tbsp neutral oil",
-        "2 garlic cloves, finely chopped",
-        "1 tbsp soy sauce",
-        "1 tsp honey",
-        "1 tsp sesame oil",
-        "Salt and pepper"
-      ],
-      steps:[
-        "Pat the thighs very dry and season with salt and pepper. Dry chicken is how you get a real golden crust.",
-        "Heat the pan medium-high with the oil. Lay the thighs smooth-side down and sear undisturbed 6–7 min until deep golden, then flip and give 4–5 min more until cooked through (165°F).",
-        "Move the chicken to a plate. Drop the heat to medium-low, add the garlic, and stir 20 sec until fragrant — don't let it brown.",
-        "Add the soy sauce, honey, and sesame oil. Swirl the pan and let it bubble 30–60 sec into a glossy glaze, scraping up the browned bits.",
-        "Return the thighs, turn them to coat in the glaze, and spoon the rest over the top."
-      ],
-      why:null,
-      src:'Soy-garlic glaze from From Valerie’s Kitchen, <a href="https://www.fromvalerieskitchen.com/soy-garlic-chicken/">Soy Garlic Chicken</a>; pan-sear method from Feel Good Foodie, <a href="https://feelgoodfoodie.net/recipe/pan-seared-chicken-thighs/">Pan Seared Chicken Thighs</a>. Macros are estimates.'
-    },
-    {
-      id:"steaksalsa", title:"Seared Steak with Avocado-Tomato Salsa", kind:"stretch", time:"~25 min",
-      tag:"Tonight's knife drill, round two. The salsa is all dicing and no new cooking, so every bit of focus goes to one thing: cutting tomato, onion, and avocado to the same small, even square.",
-      cal:580, protein:49, fat:36, carb:17,
-      ingredients:[
-        "6 oz sirloin or strip steak",
-        "1 tbsp neutral oil",
+        "2 small corn tortillas",
         "1 ripe tomato",
-        "¼ red onion",
-        "½ jalapeño, optional (seeds out for less heat)",
-        "½ avocado",
+        "¼ white onion",
+        "½ jalapeño (seeds out for less heat)",
         "Small handful cilantro",
         "Juice of ½ lime, salt, pepper"
       ],
       steps:[
-        "Make the salsa first so the flavors mingle. Aim for an even ¼-inch dice so every bite has a little of everything. Halve the tomato, scoop out the watery seeds, slice into strips, then cross-cut into small squares.",
-        "Dice the onion the same size: slice one way, then the other. Finely chop the jalapeño and cilantro. Combine in a bowl with the lime juice and a pinch of salt.",
-        "Dice the avocado to match and fold it in gently at the end so it keeps its shape. Set the bowl aside while you cook.",
-        "Pat the steak dry and season hard with salt and pepper. Heat the pan medium-high with the oil and sear 3–4 min per side for medium-rare. Rest it 5 min, then slice against the grain.",
-        "Pile the steak on the plate and spoon the avocado-tomato salsa over the top. Taste and add a squeeze more lime if it needs lift."
+        "Make the pico first so the flavors mingle. Halve the tomato, scoop out the watery seeds, slice into ¼-inch strips, then cross-cut into small even squares.",
+        "Dice the onion the same size: slice it one way into thin strips, then cross-cut the other way. Finely chop the jalapeño and cilantro. Combine everything in a bowl with the lime juice and a pinch of salt.",
+        "Pat the steak dry and season hard with salt and pepper. Heat the pan medium-high with the oil and sear 3–4 min per side for medium-rare. Move it to a plate to rest 5 min.",
+        "Wipe the pan, set it over medium heat, and warm each tortilla 20–30 sec a side until soft and a little toasty.",
+        "Slice the rested steak against the grain into thin strips. Pile into the tortillas and spoon the pico over the top, with an extra squeeze of lime if it needs lift."
       ],
-      why:"Even dice is the quiet skill under nearly everything ahead — salsa, sauté, stir-fry, hash. One try doesn't make it stick, so tonight is rep two: same cut, new dish. In a raw salsa there's nowhere to hide a sloppy chunk, which is exactly why it's the best place to drill. Land it twice and your knife stops being the thing slowing you down.",
-      src:'Pico method from RecipeTin Eats, <a href="https://www.recipetineats.com/pico-de-gallo-authentic/">Pico de Gallo</a> (avocado folded in, per What’s Gaby Cooking, <a href="https://whatsgabycooking.com/pico-de-gallo/">Pico de Gallo</a>); steak method from Downshiftology, <a href="https://downshiftology.com/recipes/garlic-butter-steak-bites/">searing basics</a>. Macros are estimates.'
+      why:"Even dice is the quiet skill under nearly everything ahead — salsa, sauté, stir-fry, hash. In a raw pico there's nowhere to hide a ragged chunk, which is exactly why it's the best place to drill: when every piece is the same size, every bite tastes balanced and nothing reads as a stray hunk of raw onion. Get the cut even here and your knife stops being the thing slowing you down.",
+      src:'Pico rewritten from Natasha\'s Kitchen, <a href="https://natashaskitchen.com/pico-de-gallo/">Authentic Pico de Gallo</a>; steak sear from Damn Delicious, <a href="https://damndelicious.net/2016/06/23/perfect-steak-wtih-garlic-butter/">searing basics</a>. Macros are estimates.'
     }
   ],
   history:[
