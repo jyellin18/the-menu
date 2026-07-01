@@ -174,103 +174,95 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Tuesday, June 30, 2026",
+  date: "Thursday, July 2, 2026",
   rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
     name: "The even dice",
-    blurb: "We're staying on the dice because it's the quiet skill under almost everything ahead: salsa, sauté, stir-fry, hash. The idea is simple — cut everything to one small, even size so the pieces release their flavor at the same rate and sit neatly on the fork. Tonight's canvas is a chimichurri for steak, a raw herb sauce where the cut is the whole dish and there's nowhere to hide a ragged chunk of garlic or shallot. Slow down, aim for a fine, even mince, and let the knife do the work."
+    blurb: "We're staying on the even dice — it's the quiet skill behind almost everything ahead: salsa, sauté, stir-fry, hash. Once every piece is cut to the same small size, everything cooks or releases flavor at the same rate, and no single bite gets stuck with a raw hunk of onion or jalapeño. Tonight's drill is a raw peach salsa for a seared pork chop: peach, red onion, and jalapeño, diced fine and even, with nowhere for a ragged cut to hide. Slow down, keep the knife moving in small, even strokes, and let the size — not the speed — be the goal."
   },
   options: [
     {
-      id:"porkpansauce", title:"Pork Chops with Apple-Mustard Pan Sauce", kind:"comfort", time:"~25 min",
-      tag:"The rung-3 pan sauce you cleared, on a new protein. Sear the chop, then build a sauce off the fond with apple, shallot, and a little Dijon. Comfortable skill, fresh flavor.",
-      cal:600, protein:38, fat:42, carb:16,
+      id:"baconcheddarsmash", title:"Bacon Cheddar Smash Burger (Bunless)", kind:"comfort", time:"~20 min",
+      tag:"A hot pan, a smash, and bacon fat doing double duty. Fast, forgiving, and built entirely on the sear-and-baste moves you already own — no bun needed to keep it lean.",
+      cal:570, protein:37, fat:43, carb:4,
       ingredients:[
-        "1 boneless pork chop, about 6 oz",
-        "1 tbsp neutral oil",
-        "1 tbsp butter",
-        "½ apple (Honeycrisp), thinly sliced",
-        "1 small shallot, finely chopped",
-        "⅓ cup chicken broth",
-        "1 tsp Dijon mustard",
-        "Salt, pepper, a little thyme if you have it"
+        "5 oz ground beef, 80/20",
+        "2 slices bacon",
+        "1 slice cheddar cheese",
+        "¾ tsp burger seasoning (paprika, garlic powder, onion powder, salt, pepper) — or just salt and pepper",
+        "A few lettuce leaves, tomato slices, thin-sliced red onion, for serving",
+        "Mustard, if you want it (no mayo)"
       ],
       steps:[
-        "Pat the pork chop bone-dry and season both sides hard with salt and pepper. Dry meat browns; wet meat just steams.",
-        "Heat the pan medium-high with the oil until it shimmers. Lay the chop in away from you and sear undisturbed 3–4 min per side, until deep golden and 145°F in the center. Move it to a plate to rest.",
-        "Drop the heat to medium. Add the butter and apple slices and let them sit a minute to caramelize, then add the shallot and cook 1–2 min until soft.",
-        "Pour in the broth and scrape the browned bits off the bottom — that fond is your flavor. Stir in the mustard and a little thyme and let it bubble 2–3 min until it lightly coats a spoon.",
-        "Return the chop and any juices, turn to coat, and spoon the apples and sauce over the top."
+        "Cook the bacon first, right in the pan you'll use for the burger, over medium heat until crisp, 5–6 min. Move it to a plate and leave the fat in the pan — that's flavor.",
+        "Form the beef into one loose ball. Don't pack it tight — a loose ball is what gives you those crispy, lacy edges once you smash it.",
+        "Crank the heat to high. When the pan is smoking hot, sprinkle the seasoning over the ball, drop it in, and smash it flat immediately with a sturdy spatula. Press down hard for about 10 seconds.",
+        "Leave it alone for about 2 min, until the bottom is deeply browned and the edges look crispy and lacy. Resist the urge to poke it.",
+        "Flip, lay the cheese on top right away so it melts as the second side finishes, about 2 min more, until it hits 160°F in the center.",
+        "Rest 1 min, then top with the bacon, lettuce, tomato, and onion. Skip the bun to keep it lean, or add one if you want it."
       ],
       why:null,
-      src:'Rewritten from The Kitchn, <a href="https://www.thekitchn.com/mustard-pork-chops-recipe-257186">Mustard Pork Chops</a>, with an apple added to the pan sauce. Macros are estimates.'
+      src:'Rewritten from Budget Bytes, <a href="https://www.budgetbytes.com/smash-burger/">Homemade Smash Burgers</a>, scaled to one serving and served bunless with bacon and cheddar added. Macros are estimates.'
     },
     {
-      id:"brownbuttersalmon", title:"Pan-Seared Salmon with Brown Butter", kind:"comfort", time:"~20 min",
-      tag:"A lean protein and a small new wrinkle on a skill you own: brown the butter first, then sear in it. Same searing move, a nuttier, richer finish. On the lighter side.",
-      cal:510, protein:34, fat:39, carb:2,
+      id:"chickenwhitewine", title:"Chicken Breast in White Wine Pan Sauce", kind:"comfort", time:"~35 min",
+      tag:"The rung-3 pan sauce you cleared, on a new protein and a new base flavor. Sear the chicken, then build the sauce off the fond with onion, garlic, and white wine instead of lemon-butter.",
+      cal:425, protein:38, fat:19, carb:12,
       ingredients:[
-        "6 oz salmon fillet, skin on",
-        "1.5 tbsp butter",
-        "A squeeze of lemon",
-        "Salt, pepper, a little parsley"
+        "1 boneless, skinless chicken breast half, about 6 oz",
+        "Salt and pepper",
+        "2 tbsp all-purpose flour, for dredging",
+        "1½ tsp olive oil",
+        "1 tbsp butter, divided",
+        "2 tbsp finely chopped yellow onion",
+        "½ tsp minced garlic",
+        "⅓ cup + 1 tsp low-sodium chicken broth, divided",
+        "¼ cup dry white wine (Sauvignon Blanc or Pinot Grigio)",
+        "½ tsp thyme leaves",
+        "½ tsp cornstarch",
+        "Chopped parsley, for serving"
       ],
       steps:[
-        "Pat the salmon very dry and season with salt and pepper. Dry fish is how you get a crust instead of steam.",
-        "Use a light-colored pan if you have one so you can watch the color. Melt the butter over medium heat and let it bubble, swirling often, 3–5 min until the foam settles and the flecks turn golden-brown and smell nutty — that's brown butter.",
-        "Lay the salmon in skin-side up and sear undisturbed 3–4 min until the bottom is golden and it releases on its own, then flip.",
-        "Cook 2–3 min more, spooning the brown butter over the top, until the fish flakes easily and is just opaque in the middle (145°F).",
-        "Move it to a plate, squeeze lemon over, and pour the brown butter on top."
+        "Put the chicken between plastic wrap and pound it with a heavy pan or mallet to an even ½-inch thickness — even thickness means even cooking, so no thin end dries out while the thick part catches up.",
+        "Season both sides with salt and pepper, then dredge in the flour and shake off the excess.",
+        "Heat the oil in the pan over medium-high until it shimmers. Lay the chicken in and sear undisturbed 4–5 min per side, until deep golden and 165°F in the center. Move it to a plate and tent with foil.",
+        "Drop the heat to medium. Melt half the butter, add the onion, and cook 4–5 min until soft and golden. Add the garlic and cook 30 sec more — just until fragrant, before it browns.",
+        "Pour in the broth and wine, scraping up the browned bits from the bottom of the pan — that's the fond, and it's most of your flavor. Stir in the thyme.",
+        "Simmer gently, uncovered, 10–12 min, letting the sauce reduce until it's noticeably thicker and the raw wine smell has cooked off.",
+        "Whisk the cornstarch with the reserved teaspoon of broth until smooth, stir it into the sauce, and cook 1 min more until it thickens slightly.",
+        "Pull the pan off the heat and stir in the remaining butter until it melts in. Taste and adjust the salt.",
+        "Return the chicken to the sauce, spoon it over, sprinkle with parsley, and serve."
       ],
       why:null,
-      src:'Rewritten from Natasha\'s Kitchen, <a href="https://natashaskitchen.com/pan-seared-salmon-with-lemon-butter/">Pan-Seared Salmon with Lemon Butter</a>. Macros are estimates.'
+      src:'Rewritten from Cooking Classy, <a href="https://www.cookingclassy.com/chicken-in-white-wine-sauce/">Chicken in White Wine Sauce</a>, scaled down to a single chicken breast portion. Macros are estimates.'
     },
     {
-      id:"garlicbuttershrimp", title:"Garlic Butter Shrimp", kind:"comfort", time:"~15 min",
-      tag:"The fastest protein on the board. Sear shrimp hard and fast, then finish with garlic butter off the heat. Quick, forgiving, and squarely in your wheelhouse.",
-      cal:450, protein:34, fat:33, carb:5,
+      id:"porkchoppeachsalsa", title:"Seared Pork Chop with Peach Salsa", kind:"stretch", time:"~45 min (includes a 30-min brine)",
+      tag:"Tonight's knife drill on a new canvas. The sear is a move you already own; the new work is dicing peach, onion, and jalapeño into an even, fine salsa — raw, so there's no cooking to hide behind.",
+      cal:410, protein:35, fat:20, carb:23,
       ingredients:[
-        "6 oz large shrimp, peeled and deveined",
-        "1 tbsp olive oil",
-        "1.5 tbsp butter",
-        "3 garlic cloves, minced",
-        "A squeeze of lemon",
-        "Pinch of red pepper flakes, a little parsley",
-        "Salt and pepper"
+        "1 boneless pork chop, about 1 inch thick (5–6 oz)",
+        "1½ cups cold water, 1 tbsp kosher salt, and 2 tsp sugar, for the brine",
+        "1 small ripe peach",
+        "1 tbsp finely chopped white onion",
+        "⅛ jalapeño, seeds and membrane removed, finely chopped",
+        "½ tbsp chopped fresh cilantro",
+        "½ tsp lime juice, plus more to taste",
+        "Pinch each of salt, ground cumin, and chili powder",
+        "1½ tsp vegetable oil"
       ],
       steps:[
-        "Pat the shrimp dry and season with salt and pepper. Mince the garlic and cut the lemon before you start — this cooks fast.",
-        "Heat the oil in the pan over medium-high until it shimmers. Add the shrimp in one layer and cook undisturbed 1–2 min until the bottoms turn pink.",
-        "Flip the shrimp, drop the heat to medium, and add the butter, garlic, and a pinch of red pepper flakes. Stir about 1 min until the garlic is fragrant and the shrimp are curled, pink, and opaque.",
-        "Pull the pan off the heat — garlic burns in seconds. Squeeze in the lemon and toss with parsley.",
-        "Serve right away, over rice or on its own, with the garlic butter spooned over."
+        "Whisk the water, salt, and sugar together until dissolved. Submerge the chop, cover, and refrigerate 30 min (up to 2 hrs) — this keeps a lean chop juicy through the sear.",
+        "While it brines, make the salsa: halve and pit the peach, then dice it into small, even ¼-inch cubes — a serrated knife grips the fuzzy skin better than a straight blade. This is tonight's drill: keep every cube close to the same size.",
+        "Finely chop the onion and jalapeño to that same small size, and roughly chop the cilantro. Combine everything in a bowl.",
+        "Stir in the lime juice and a pinch of salt. Taste — if the peach is very sweet, add a touch more lime to balance it. Refrigerate until serving.",
+        "Mix a pinch each of salt, cumin, and chili powder in a small bowl — that's your rub. Remove the chop from the brine and pat it very dry with paper towels, then sprinkle the rub over both sides.",
+        "Heat the oil in the pan over medium-high until shimmering. Sear the chop 3–4 min until deep golden on the bottom.",
+        "Flip, drop the heat to medium, and cook 3–5 min more until it reads 135–145°F in the center. Move it to a plate and rest 3 min so the juices settle back in.",
+        "Spoon the peach salsa generously over the chop and serve."
       ],
-      why:null,
-      src:'Rewritten from The Kitchn, <a href="https://www.thekitchn.com/garlic-butter-shrimp-265172">Garlic Butter Shrimp</a>. Macros are estimates.'
-    },
-    {
-      id:"steakchimichurri", title:"Seared Steak with Chimichurri", kind:"stretch", time:"~25 min",
-      tag:"Tonight's knife drill. The sear is a move you own cold; the new work is the chimichurri, where the whole job is mincing parsley, garlic, and shallot to one small, even size.",
-      cal:650, protein:47, fat:48, carb:5,
-      ingredients:[
-        "6 oz sirloin or flank steak",
-        "1 tbsp neutral oil",
-        "¼ cup parsley, finely chopped",
-        "2 garlic cloves, minced",
-        "1 small shallot, finely diced",
-        "2 tbsp olive oil",
-        "1 tbsp red wine vinegar",
-        "Pinch of dried oregano and red pepper flakes, salt"
-      ],
-      steps:[
-        "Make the chimichurri first so the flavors mingle. This is the knife drill: finely chop the parsley, mince the garlic, and dice the shallot as small and even as you can — aim for tiny, uniform pieces.",
-        "Stir the parsley, garlic, and shallot together with the olive oil, red wine vinegar, oregano, a pinch of red pepper flakes, and salt. Let it sit while you cook the steak.",
-        "Pat the steak dry and season hard with salt and pepper. Heat the pan medium-high with the oil until it shimmers.",
-        "Sear the steak undisturbed 3–4 min per side for medium-rare (130–135°F). Move it to a plate and rest 5–10 min so the juices settle.",
-        "Slice against the grain into thin strips and spoon the chimichurri generously over the top."
-      ],
-      why:"Even dice is the quiet skill under nearly everything ahead — salsa, sauté, stir-fry, hash. A raw chimichurri is the perfect place to drill it: there's nothing to cook and nowhere to hide a ragged chunk of garlic or shallot. When every piece is the same small size, the sauce tastes balanced in every bite instead of hitting you with a stray hunk of raw onion. Get the cut even here and your knife stops being the thing slowing you down.",
-      src:'Rewritten from RecipeTin Eats, <a href="https://www.recipetineats.com/skirt-steak-with-chimichurri-sauce/">Skirt Steak with Chimichurri Sauce</a>. Macros are estimates.'
+      why:"The even dice is what makes a raw salsa work: uniform little cubes of peach, onion, and jalapeño release their flavor at the same rate, so no single bite is all onion and the next all fruit. It's the same knife move behind hash, stir-fry, and any sauté ahead — get the size right here, on a forgiving raw dish, and the knife stops being the thing that slows you down later.",
+      src:'Rewritten from The Kitchn, <a href="https://www.thekitchn.com/pork-chops-peach-salsa-recipe-23185967">Seared Pork Chops with Peach Salsa</a>, scaled down to a single chop and its share of salsa. Macros are estimates (per-serving figures drawn from the original recipe).'
     }
   ],
   history:[
