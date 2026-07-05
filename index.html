@@ -174,104 +174,89 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Saturday, July 4, 2026",
+  date: "Sunday, July 5, 2026",
   rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
-    name: "The even dice, round two",
-    blurb: "The dice drill runs back tonight, this time under a seared steak: tomato, red onion, and a new customer — the avocado — all cut to the same small size for an avocado-corn salsa. The avocado adds one new move (halve, pop the pit, score it in the skin, scoop), but the point is the same as last time: slow the knife down and make every cube match, so no bite is all onion or all avocado. The steak itself is your oldest move; all the new work happens on the cutting board."
+    name: "The even dice, in the raw",
+    blurb: "Pico de gallo is the most honest test of a dice there is: nothing gets cooked, so nothing hides. Tomato (seeds scooped out), onion, and jalapeño all cut to the same pencil-eraser cube, and the salsa seasons itself — every bite carries all four flavors at once. Slow is fine; even is the goal. The shrimp is almost a footnote: four minutes in a hot pan, a smaller, faster version of your oldest move."
   },
   options: [
     {
-      id:"skilletsmashburger", title:"Skillet Smash Burger", kind:"comfort", time:"~35 min",
-      tag:"A July 4th classic, no grill required. Smashing the patty thin onto a ripping-hot pan builds the same browned crust you chase on steak — maximum sear, minimum technique.",
-      cal:612, protein:35, fat:41, carb:23,
+      id:"garlicbuttersteakbites", title:"Garlic Butter Steak Bites", kind:"comfort", time:"~20 min",
+      tag:"Your go-to steak, cut into cubes so every piece gets its own crust — then tossed off the heat in garlic butter, your fat-as-medium move in miniature.",
+      cal:470, protein:36, fat:35, carb:2,
       ingredients:[
-        "4 1/2 oz ground chuck (80% lean ground beef)",
-        "1/8 tsp black pepper",
-        "1/8 tsp garlic powder",
-        "1/8 tsp onion powder",
-        "1/8 tsp ground mustard",
-        "1/4 tsp Worcestershire sauce",
-        "Heaping 1/8 tsp kosher salt",
-        "1/2 tsp vegetable oil",
-        "1 slice cheddar cheese",
-        "1 hamburger bun, lightly toasted if you like",
-        "Toppings of choice: lettuce, tomato, ketchup, mustard"
+        "6 oz sirloin steak (or strip; something well marbled) — est. 320 cal / 36P / 19F / 0C",
+        "Salt & pepper, a generous amount",
+        "1 tsp olive oil — est. 40 cal / 4.5F",
+        "1 Tbsp butter — est. 100 cal / 11F",
+        "2 cloves garlic, minced — est. 9 cal / 2C",
+        "Chopped fresh parsley, and a lemon wedge if you have one"
       ],
       steps:[
-        "In a bowl, mix the beef with the pepper, garlic powder, onion powder, ground mustard, and Worcestershire. Leave the salt out — salting the inside of loose ground beef changes its texture; it goes on the outside later.",
-        "Form the meat into one ball, then pat it into a disc about 1 inch thick. Refrigerate at least 15 min — a cold patty holds together when you smash it.",
-        "Turn on the exhaust fan (this gets smoky) and heat a cast-iron or nonstick skillet over medium-high until it's very hot. Season the patty all over with the salt.",
-        "Coat the pan with the oil, drop in the patty, and immediately smash it flat with a sturdy spatula to about 1/4 inch thick. Smash once, then leave it alone — that's the whole trick.",
-        "Cook about 2 min, until the bottom is deeply browned and crusty.",
-        "Flip, lay the cheese on top, and cook about 2 min more for medium-rare to medium, 3 min for medium-well.",
-        "Slide it onto the bun with your toppings. Hungry night? Double everything and stack two patties — same steps, smash them one at a time."
+        "Take the steak out of the fridge 30 min ahead if you can — a fridge-cold center cooks unevenly.",
+        "Cut the steak into 1-inch cubes and season generously all over with salt and pepper. These are rough chunks, not tonight's dice drill — speed is fine here.",
+        "Heat the olive oil in a skillet over medium-high for a few minutes, until it shimmers. Hot pan is the whole game: it's what builds crust.",
+        "Add the cubes in a single layer with space between them (two batches if they crowd). Leave them alone for 2 min, flip, 2 min more for medium. Don't push them around — undisturbed contact is where the sear comes from.",
+        "Move the steak to a plate. Drop the heat to medium-low and add the butter and garlic. Stir 1-2 min, until fragrant but not browned — garlic burns fast.",
+        "Take the pan off the heat, return the steak and every drop of juice from the plate, and toss to coat. Parsley over top; a squeeze of lemon wakes the whole thing up."
       ],
       why:null,
-      src:'Rewritten from Once Upon a Chef, <a href="https://www.onceuponachef.com/recipes/smash-burgers.html">Smash Burgers</a>, scaled from 4 burgers to one. Macros are the original recipe\'s published per-burger nutrition (an estimate; includes the bun and cheese).'
+      src:'Rewritten from Salt & Lavender, <a href="https://www.saltandlavender.com/garlic-butter-steak-bites/">Garlic Butter Steak Bites</a>, scaled from 4 servings to one. Macros are per-ingredient estimates for the scaled version, not the original\'s published numbers.'
     },
     {
-      id:"honeygarlicchickenbites", title:"Honey Garlic Chicken Bites", kind:"comfort", time:"~30 min",
-      tag:"Bite-size chicken, browned hard, then tossed in a sweet-tangy sauce built right on the fond you left in the pan — your rung-3 deglazing move wearing takeout clothes.",
-      cal:670, protein:50, fat:30, carb:50,
+      id:"honeygarlicporkchop", title:"Honey Garlic Pork Chop", kind:"comfort", time:"~20 min",
+      tag:"Your rung-3 pan sauce with sugar in it: sear one good chop, then whisk a honey-garlic glaze right on the fond it leaves behind.",
+      cal:595, protein:42, fat:36, carb:28,
       ingredients:[
-        "1 boneless, skinless chicken breast, about 8 oz",
-        "2 Tbsp honey",
-        "1 Tbsp soy sauce",
-        "1/2 Tbsp rice vinegar",
-        "1/2 tsp sriracha",
-        "1 tsp toasted sesame oil",
-        "1/2 Tbsp cornstarch",
-        "1/4 tsp salt",
-        "1/8 tsp black pepper",
-        "1/8 tsp garlic powder",
-        "1 Tbsp all-purpose flour",
-        "1 Tbsp olive oil",
-        "1/2 Tbsp butter",
-        "2 cloves garlic, minced",
-        "1 green onion, sliced"
+        "1 bone-in pork loin chop, about 1 inch thick (8-10 oz) — est. 370 cal / 42P / 22F / 0C",
+        "1/2 tsp kosher salt + 1/8 tsp black pepper, for the chop",
+        "1 Tbsp vegetable oil — est. 120 cal / 14F",
+        "2 cloves garlic, very finely chopped — est. 9 cal / 2C",
+        "1 1/2 Tbsp honey — est. 96 cal / 26C",
+        "1 Tbsp water",
+        "3/4 tsp apple cider vinegar",
+        "Small pinch red pepper flakes (your chili-oil lesson: start mild)",
+        "Chopped parsley or cilantro to finish"
       ],
       steps:[
-        "Make the sauce first — the cooking goes fast once it starts. Stir the honey, soy sauce, rice vinegar, sriracha, sesame oil, and cornstarch together in a small bowl and set it aside.",
-        "Cut the chicken breast into small 1/2-inch pieces. Season with the salt, pepper, and garlic powder, then toss with the flour until every piece has a light coat — that coat is what browns and later grabs the sauce.",
-        "Heat the olive oil in a skillet over medium-high. Add the chicken in a single layer and cook, turning occasionally, until browned on all sides and cooked through, about 5-7 min. Move it to a plate.",
-        "Drop the heat to medium-low and add the butter and garlic. Cook 30-60 sec, just until fragrant — garlic burns fast at this stage.",
-        "Give the sauce a re-stir (the cornstarch settles), pour it in, and scrape up the browned bits from the pan bottom — same fond move as your pan sauces. Simmer about 2 min until it thickens and turns glossy.",
-        "Return the chicken and toss until every piece is coated, 1-2 min to heat through.",
-        "Off the heat, scatter the green onion on top. Good alone, better over a pot of rice if you have the time."
+        "Build the glaze first: stir the garlic, honey, water, vinegar, pepper flakes, and a small pinch of salt together in a small bowl. Once the chop is seared, things move fast.",
+        "Pat the chop very dry with a paper towel, then season both sides with the salt and pepper. Dry surface = better crust; water is the enemy of browning.",
+        "Heat the oil in a skillet over medium-high until shimmering. Lay the chop in and sear about 4 min per side, until deep golden brown and 135°F in the center. Move it to a cutting board to rest.",
+        "Drop the heat to medium-low and pour in the glaze — careful, it bubbles and steams. Whisk constantly for 4-5 min while it thickens and turns glossy. This is the same deglazing idea as your lemon-butter sauce: the liquid lifts the browned bits, and they season the glaze.",
+        "Return the chop and any juices from the board, and spoon glaze over the top until it's coated and shiny.",
+        "Plate the chop, pour the rest of the glaze over, and finish with the herbs. Resting carries it to a juicy 140-145°F — a little pink in pork is right."
       ],
       why:null,
-      src:'Rewritten from Budget Bytes, <a href="https://www.budgetbytes.com/honey-garlic-chicken/">Honey Garlic Chicken</a>, scaled from a 4-serving recipe to one generous portion. Macros are per-ingredient estimates for the scaled version, not the original\'s published numbers.'
+      src:'Rewritten from The Kitchn, <a href="https://www.thekitchn.com/honey-garlic-pork-chops-23075439">Honey Garlic Pork Chops</a>, scaled from two chops to one with half the glaze. Macros are per-ingredient estimates for the scaled version, not the original\'s published numbers.'
     },
     {
-      id:"searedsteakavocadocornsalsa", title:"Seared Steak with Avocado-Corn Salsa", kind:"stretch", time:"~35 min",
-      tag:"Your go-to sear, topped with tonight's knife work: an avocado-corn salsa where tomato, onion, and avocado all land at the same small, even dice.",
-      cal:595, protein:49, fat:36, carb:20,
+      id:"shrimptacospico", title:"Shrimp Tacos with Fresh Pico de Gallo", kind:"stretch", time:"~35 min",
+      tag:"Shrimp cooks in four minutes; this dish is really made on the cutting board — a hand-diced pico where tomato, onion, and jalapeño all land at the same small, even size.",
+      cal:545, protein:50, fat:18, carb:50,
       ingredients:[
-        "8 oz sirloin or strip steak, about 1 inch thick",
-        "1 tsp olive oil",
-        "1 clove garlic, minced",
-        "1/4 tsp dried oregano (or a little chopped fresh rosemary or thyme)",
-        "1/4 tsp salt, plus a pinch for the salsa",
-        "1/4 tsp black pepper",
-        "1/2 avocado",
-        "1 Roma tomato",
-        "2 Tbsp finely diced red onion",
-        "1/4 cup canned corn, drained",
-        "1 Tbsp chopped fresh cilantro",
-        "Juice of 1/2 lime"
+        "8 oz raw shrimp, peeled and deveined (thawed if frozen) — est. 195 cal / 45P / 2F / 1C",
+        "1/2 tsp chili powder + 1/4 tsp ground cumin + 1/4 tsp garlic powder + 1/4 tsp salt — est. 5 cal",
+        "1 Tbsp olive oil — est. 120 cal / 14F",
+        "3 corn tortillas — est. 180 cal / 4P / 2F / 36C",
+        "2 Roma tomatoes — est. 25 cal / 1P / 5C",
+        "1/4 cup white onion, finely diced — est. 15 cal / 4C",
+        "1/2 jalapeño, minced (seeds out) — est. 2 cal / 1C",
+        "2 Tbsp chopped fresh cilantro",
+        "1/2 lime, juiced — est. 5 cal / 2C"
       ],
       steps:[
-        "Rub the steak all over with the olive oil, garlic, oregano, salt, and pepper. Let it sit at room temperature while you build the salsa — it seasons the surface and takes the fridge-chill off for a better sear.",
-        "Now the drill. Dice the tomato small and even — pencil-eraser size, same as last time. Then match the red onion to it.",
-        "The avocado is the new move: halve it around the pit, twist the halves apart, and tap the knife into the pit to pop it out. Score a crosshatch into the flesh while it's still in the skin — cuts the size of your tomato dice — then scoop it out with a spoon and the dice falls out done.",
-        "Combine the tomato, onion, avocado, corn, and cilantro in a bowl with the lime juice and a pinch of salt. Toss gently so the avocado keeps its shape. Set aside — the lime keeps it green.",
-        "Heat a skillet over medium-high until very hot. Lay the steak in and sear 3-4 min per side for medium-rare, until deeply browned and 130-135°F in the center. This is your oldest move; trust it.",
-        "Rest the steak on a cutting board for 5-10 min so the juices settle.",
-        "Slice against the grain, pile the salsa over the top, and serve."
+        "Pico first, and take it slow — this is the drill. Halve the tomatoes, scoop out the seeds and jelly with a spoon (they water down the salsa), and dice the flesh small and even: pencil-eraser cubes, every one matching.",
+        "Now match the onion to the tomato. Same cube size — that's the whole assignment. If the onion pieces run bigger than the tomato pieces, some bites will be all onion.",
+        "Mince the jalapeño finer than everything else, seeds and ribs removed. Chili-oil lesson applies: start with half the pepper, taste at the end, add more if it needs it. Heat only goes one direction.",
+        "Stir the tomato, onion, jalapeño, and cilantro together with the lime juice and a good pinch of salt. Set it aside — 15 minutes of sitting melds the flavors while you cook.",
+        "Pat the shrimp very dry, then toss with the chili powder, cumin, garlic powder, and salt until evenly coated.",
+        "Heat the olive oil in the skillet over medium-high. Add the shrimp in a single layer and cook 1-2 min per side, until pink, opaque, and curled into a loose C. A tight O means overdone — shrimp goes from perfect to rubbery in about a minute, so pull them early.",
+        "Slide the shrimp out, wipe the pan, and warm the tortillas in it about 30 seconds per side, until soft and spotty.",
+        "Build: shrimp, a big spoon of pico, more cilantro and lime if you like. Taste the pico — now's when you add the rest of the jalapeño if it's too polite."
       ],
-      why:"One good rep doesn't make a skill — the even dice becomes yours the second and third time your hands do it without thinking. Tonight adds one wrinkle, the avocado (pit, score, scoop), but the target is identical: every cube the same size, so every bite of salsa is balanced. Once the dice is automatic, rung 5 — cooking those vegetables instead of serving them raw — is a short step.",
-      src:'Adapted from The Recipe Critic, <a href="https://therecipecritic.com/grilled-flank-steak/">Grilled Garlic Herb Flank Steak with Avocado Corn Salsa</a> — moved from the grill to a hot skillet (the author confirms a pan sear works), swapped to a single sirloin, and the marinade shortened to a rub. Salsa scaled to one portion. Macros are per-ingredient estimates for this scaled version.'
+      why:"Third rep of the dice, and the most honest one: nothing in a pico gets cooked, so uneven knife work has nowhere to hide. When every cube matches, the salsa needs nothing else — the knife did the seasoning. This is also the rep where the dice should start feeling automatic, and automatic is the door to rung 5: cooking the vegetables you cut instead of serving them raw.",
+      src:'Pico rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/pico-de-gallo/">Pico de Gallo</a>, scaled to one serving; shrimp method from Natasha\'s Kitchen, <a href="https://natashaskitchen.com/shrimp-tacos/">Shrimp Tacos</a>. Macros are per-ingredient estimates for the scaled version.'
     }
   ],
   history:[
