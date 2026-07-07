@@ -66,11 +66,12 @@
     }
   ],
   "awaiting_feedback": {
-    "date": "2026-07-06",
+    "date": "2026-07-07",
     "options": [
-      "Steak with Creamy Peppercorn Sauce",
-      "Pan-Seared Salmon with Lemon-Garlic Butter",
-      "Seared Chicken over Israeli Salad"
+      "Garlic-Butter Pork Chops",
+      "Chicken Thighs with Honey-Dijon Pan Sauce",
+      "Garlic Butter Shrimp",
+      "Seared Steak with Avocado-Tomato Salsa"
     ]
   }
 }
