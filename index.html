@@ -174,109 +174,109 @@
    Everything below DATA is the renderer and stays fixed.
    ============================================================ */
 const DATA = {
-  date: "Tuesday, July 7, 2026",
+  date: "Thursday, July 9, 2026",
   rung: "Rung 3 · you sear, use fat, and build a pan sauce",
   technique: {
-    name: "The even dice, take three — the soft one",
-    blurb: "You've diced the firm thing (tomato and onion for a pico) and the watery thing (cucumber). Tonight's test is the soft one: avocado. It has no crunch to push back on the blade, so a heavy hand turns it to guacamole before it ever reaches the plate. Two tricks make it behave. First, buy a firm avocado, one that only just gives when you press it; a mushy one can't hold a cube no matter how good your knife is. Second, score the flesh into a grid while it's still in the skin, then scoop and fold it in last, gentle as you can, so it stays in neat pieces instead of smearing. The steak is your oldest, most trusted move: hot pan, leave it alone, rest it. The salsa is the only new thing to learn."
+    name: "The even dice — start with the firm ones",
+    blurb: "Tonight the knife is the lesson, and the kindest place to start is a firm tomato and an onion for a fresh pico. Firm is forgiving: the vegetable pushes back on the blade, so the cut goes where you aim it instead of squashing. The goal is one thing only, and it matters more than speed: pieces that are all the same size. Uneven pieces read as sloppy on the plate and, once you start cooking vegetables, they cook unevenly too, some mush while others stay raw. The method is planks, then strips, then cubes. Lay the tomato or onion flat, slice it into flat planks, stack or fan the planks and slice into strips, then cut across the strips into little cubes. Curl the fingertips of your holding hand under into a claw so your knuckles guide the blade and the tips stay clear. Small and even beats fast every time. The steak-and-eggs and the salmon are your trusted moves; the pico is the only new skill on the board."
   },
   options: [
     {
-      id:"garlicporkchops", title:"Garlic-Butter Pork Chops", kind:"comfort", time:"~20 min",
-      tag:"Your searing move on a new protein, finished with the fat-as-flavor idea you already know from bacon: a spoonful of garlic-herb butter melting over the top.",
-      cal:380, protein:38, fat:24, carb:2,
+      id:"steakandeggs", title:"Steak & Eggs", kind:"comfort", time:"~20 min",
+      tag:"Your two most trusted moves on one plate: sear a steak, then fry eggs right in the pan behind it. Nothing new to learn, everything you already love.",
+      cal:620, protein:48, fat:47, carb:1,
+      ingredients:[
+        "6 oz sirloin or ribeye steak — est. 340 cal / 36P / 21F / 0C",
+        "Salt & pepper, generous",
+        "1 tsp olive oil — est. 40 cal / 4.5F",
+        "1 Tbsp butter — est. 100 cal / 11F",
+        "2 large eggs — est. 140 cal / 12P / 10F / 1C",
+        "Chopped chives or parsley to finish"
+      ],
+      steps:[
+        "Pat the steak very dry and season both sides hard with salt and pepper. Dry surface, hot pan — your oldest rule.",
+        "Heat the olive oil in a skillet over medium-high until it shimmers. Lay the steak in and leave it alone: 3-4 min per side for medium-rare (125-130°F). Move it to a plate to rest — resting is what keeps the juices in the meat, not on the board.",
+        "Drop the heat to medium and add the butter to the same pan with all those browned steak bits. Once it foams, crack in the eggs.",
+        "Fry the eggs 2-3 min. For runny yolks, spoon a little of the hot butter over the whites until they set but the yolks stay soft — the same basting move as your eggs in bacon fat.",
+        "Slice the rested steak against the grain, slide the eggs alongside, and scatter chives over the top. Break a yolk over the steak and it becomes the sauce."
+      ],
+      why:null,
+      src:'Rewritten from Diethood, <a href="https://diethood.com/steak-and-eggs-recipe/">The Best Steak and Eggs</a>, scaled to one serving. Macros are per-ingredient estimates for the scaled version, not the original\'s published numbers.'
+    },
+    {
+      id:"creamygarlicpork", title:"Creamy Garlic Pork Chops", kind:"comfort", time:"~30 min",
+      tag:"Your rung-3 pan sauce with a richer finish: sear the chop, then build a garlic cream sauce off the fond instead of mounting butter. Same skeleton as your lemon-butter night, softer and rounder.",
+      cal:640, protein:44, fat:48, carb:6,
       ingredients:[
         "1 boneless pork chop, about 6 oz — est. 230 cal / 38P / 8F / 0C",
         "Salt & pepper, generous",
         "1 tsp olive oil — est. 40 cal / 4.5F",
         "1 Tbsp butter — est. 100 cal / 11F",
-        "2 cloves garlic, smashed — est. 9 cal / 2C",
-        "A few sprigs fresh thyme or rosemary (or 1/4 tsp dried) — est. 2 cal",
-        "Chopped parsley to finish"
-      ],
-      steps:[
-        "Pat the pork chop very dry and season both sides hard with salt and pepper. Dry surface, hot pan — same rule as your steak.",
-        "Heat the olive oil in a skillet over medium-high until it shimmers. Lay the chop in and leave it alone for about 3 min, until the underside is deep golden. Flip it.",
-        "Drop the heat to medium and add the butter, smashed garlic, and thyme to the pan. As the butter melts and foams, tilt the pan and spoon it over the pork again and again — this basting is the same move as your eggs in bacon fat, just aimed upward.",
-        "Keep basting and cooking 3-5 more min, until the center hits 140-145°F. Pork chops are lean, so pull it a touch early; carryover heat finishes it and keeps it juicy.",
-        "Rest it on a plate 5 min so the juices settle, then spoon the garlic butter from the pan back over the top and scatter parsley."
-      ],
-      why:null,
-      src:'Rewritten from Jessica Gavin, <a href="https://www.jessicagavin.com/pan-fried-pork-chops/">Pan-Fried Pork Chops with Garlic Butter</a>, scaled to one serving. Macros are per-ingredient estimates for the scaled version, not the original\'s published numbers.'
-    },
-    {
-      id:"honeydijonchicken", title:"Chicken Thighs with Honey-Dijon Pan Sauce", kind:"comfort", time:"~30 min",
-      tag:"Your rung-3 pan sauce again, with a new flavor to prove the move travels: sear the thighs, then build a honey-mustard sauce off the fond, the same skeleton as your lemon-butter night.",
-      cal:480, protein:35, fat:31, carb:9,
-      ingredients:[
-        "2 boneless skinless chicken thighs, about 6 oz — est. 280 cal / 34P / 15F / 0C",
-        "Salt & pepper",
-        "1 tsp olive oil — est. 40 cal / 4.5F",
-        "1 Tbsp butter — est. 100 cal / 11F",
-        "1 small shallot, finely chopped — est. 10 cal / 2C",
+        "4 cloves garlic, smashed — est. 18 cal / 4C",
         "1/3 cup chicken stock — est. 10 cal / 1P",
-        "1 Tbsp Dijon mustard — est. 15 cal / 1C",
-        "1 tsp honey — est. 20 cal / 6C",
+        "1/4 cup heavy cream — est. 200 cal / 1P / 22F / 2C",
+        "2 Tbsp grated parmesan — est. 43 cal / 4P / 3F",
         "Chopped parsley to finish"
       ],
       steps:[
-        "Pat the thighs dry and season both sides with salt and pepper. Heat the olive oil in a skillet over medium-high until it shimmers.",
-        "Lay the thighs in smooth-side down and leave them alone 5-6 min, until deep golden. Flip and cook 4-5 more min, until 175°F in the thickest part — thighs are forgiving, so a little extra time only makes them more tender. Move them to a plate.",
-        "Drop the heat to medium. Add the butter and shallot to the same pan and stir 1 min. Those browned bits on the bottom are the flavor you're about to lift.",
-        "Pour in the chicken stock and scrape the pan hard with a wooden spoon until the bottom is clean. This is your deglaze, exactly like the lemon-butter sauce. Let it bubble and reduce by half, about 2 min.",
-        "Whisk in the Dijon and honey and simmer 1-2 min until the sauce is glossy and coats a spoon. Taste: it should ride the line between tangy and sweet. Nudge with a pinch more of either if it needs it.",
-        "Return the thighs and their juices, turn to coat, and finish with parsley."
+        "Pat the pork chop very dry and season both sides hard with salt and pepper. Heat the olive oil in a skillet over medium-high until it shimmers.",
+        "Lay the chop in and leave it alone about 3 min per side, until deep golden and the center hits 140-145°F. Pork is lean, so pull it a touch early and let carryover finish it. Move it to a plate.",
+        "Drop the heat to medium. Add the butter and smashed garlic to the same pan and stir 2 min, until the garlic softens and smells sweet. Don't let it brown hard or it turns bitter.",
+        "Pour in the stock and scrape the pan clean with a wooden spoon — that's your deglaze, lifting the fond, exactly like the lemon-butter sauce.",
+        "Stir in the cream and parmesan and simmer 2-3 min until the sauce thickens enough to coat a spoon. Taste and adjust salt.",
+        "Return the chop and its juices, spoon the sauce over, and finish with parsley."
       ],
       why:null,
-      src:'Rewritten from Real Food with Sarah, <a href="https://www.realfoodwithsarah.com/pan-seared-chicken-with-dijon-mustard-sauce/">Pan-Seared Chicken with Dijon Mustard Sauce</a>, with honey added and scaled to one serving. Macros are per-ingredient estimates, not the original\'s published numbers.'
+      src:'Rewritten from Salt & Lavender, <a href="https://www.saltandlavender.com/creamy-garlic-pork-chops/">Creamy Garlic Pork Chops</a>, scaled to one serving. Macros are per-ingredient estimates, not the original\'s published numbers.'
     },
     {
-      id:"garlicshrimp", title:"Garlic Butter Shrimp", kind:"comfort", time:"~10 min",
-      tag:"The fastest protein you'll ever sear, swimming in a garlic-lemon butter. Shrimp cook in about two minutes, so the whole lesson is learning to pull them the second they turn pink.",
-      cal:430, protein:34, fat:29, carb:6,
+      id:"seasalmon", title:"Pan-Seared Salmon with Lemon-Garlic Butter", kind:"comfort", time:"~15 min",
+      tag:"A fast, healthy sear on a new protein, finished with the fat-as-flavor idea you know cold: garlic-lemon butter spooned over the top. The one trick is a crisp skin, and it comes from patience, not fuss.",
+      cal:485, protein:34, fat:38, carb:4,
       ingredients:[
-        "6 oz large shrimp, peeled and deveined — est. 168 cal / 34P / 2F / 1C",
+        "6 oz salmon fillet, skin on — est. 280 cal / 34P / 16F / 0C",
         "Salt & pepper",
         "1 tsp olive oil — est. 40 cal / 4.5F",
-        "2 Tbsp butter — est. 200 cal / 22F",
-        "3 cloves garlic, minced — est. 13 cal / 3C",
+        "1.5 Tbsp butter — est. 150 cal / 17F",
+        "2 cloves garlic, minced — est. 9 cal / 2C",
         "1/2 lemon, juiced — est. 6 cal / 2C",
-        "Pinch red pepper flakes and chopped parsley to finish"
+        "Chopped parsley or dill to finish"
       ],
       steps:[
-        "Pat the shrimp very dry and season with salt and pepper. Dry shrimp sear; wet shrimp steam and go rubbery.",
-        "Heat the olive oil in a skillet over medium-high until it shimmers. Lay the shrimp in a single layer and cook about 1 min per side. The instant they curl into a loose C and turn pink and opaque, they're done — a tight O means they went too far. Scoop them onto a plate.",
-        "Drop the heat to medium. Add the butter and garlic to the pan and stir just 30-60 sec, until fragrant. Garlic burns fast and turns bitter, so keep it moving and don't let it brown hard.",
-        "Kill the heat, squeeze in the lemon, and add the red pepper flakes. Return the shrimp and toss for 30 sec just to coat and warm through. Finish with parsley. Great over rice cooked in the pot alongside."
+        "Pat the salmon very dry, especially the skin, and season both sides with salt and pepper. Dry skin is the whole secret to a crisp one.",
+        "Heat the olive oil in a skillet over medium-high until it shimmers. Lay the salmon in skin-side down and press it flat with a spatula for 10 sec so the skin stays put.",
+        "Leave it alone 4-5 min. Don't chase it — when the skin is crisp it releases on its own. Flip and cook 2-3 more min, until the flesh is just opaque and flakes with gentle pressure.",
+        "Drop the heat to medium. Add the butter and garlic to the pan and stir 30-60 sec, just until fragrant — garlic burns fast, so keep it moving.",
+        "Kill the heat, squeeze in the lemon, and spoon the garlic butter over the salmon a few times. Finish with parsley. Great over rice cooked in the pot alongside."
       ],
       why:null,
-      src:'Rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/garlic-butter-shrimp/">Garlic Butter Shrimp</a>, scaled to one serving. Macros are per-ingredient estimates, not the original\'s published numbers.'
+      src:'Rewritten from Cooking Classy, <a href="https://www.cookingclassy.com/skillet-seared-salmon-with-garlic-lemon-butter-sauce/">Pan Seared Salmon with Lemon Butter Sauce</a>, scaled to one serving. Macros are per-ingredient estimates, not the original\'s published numbers.'
     },
     {
-      id:"avocadosalsasteak", title:"Seared Steak with Avocado-Tomato Salsa", kind:"stretch", time:"~25 min",
-      tag:"A plain seared steak crowned with a chunky avocado-tomato salsa — the salsa is the whole lesson, your third rep of the even dice on the softest, trickiest vegetable yet.",
-      cal:525, protein:38, fat:37, carb:13,
+      id:"chickenpico", title:"Seared Chicken with Fresh Pico de Gallo", kind:"stretch", time:"~25 min",
+      tag:"A simple seared chicken breast crowned with a fresh pico — and the pico is the whole lesson: your first real rep at the even dice, on the firm, forgiving vegetables where the knife is easiest to learn.",
+      cal:260, protein:37, fat:9, carb:9,
       ingredients:[
-        "6 oz sirloin or ribeye steak — est. 340 cal / 36P / 21F / 0C",
-        "Salt & pepper, generous",
-        "1 tsp olive oil, for searing — est. 40 cal / 4.5F",
-        "1/2 firm-ripe avocado — est. 120 cal / 1P / 11F / 6C",
-        "1 Roma tomato, seeds scooped out, diced small — est. 12 cal / 1P / 3C",
-        "2 Tbsp red onion, finely diced — est. 8 cal / 2C",
+        "1 boneless skinless chicken breast, about 6 oz — est. 185 cal / 36P / 4F / 0C",
+        "Salt, pepper, and a pinch of cumin",
+        "1 tsp olive oil — est. 40 cal / 4.5F",
+        "1 Roma tomato, seeds scooped out — est. 12 cal / 1P / 3C",
+        "3 Tbsp white or red onion — est. 12 cal / 3C",
+        "1/2 jalapeño, seeds removed (optional) — est. 2 cal / 1C",
         "1 Tbsp chopped fresh cilantro — est. 1 cal",
         "1/2 lime, juiced — est. 5 cal / 2C",
-        "Salt & pepper for the salsa"
+        "Salt for the pico"
       ],
       steps:[
-        "Prep the salsa base first. Halve the tomato, scoop out the seeds and jelly so it doesn't water down, and dice the flesh into small, even cubes. Finely dice the red onion smaller than the tomato — raw onion is loud, so keep it in the background.",
-        "Now the avocado, the new test. With the half still in its skin, run your knife tip through the flesh in a grid — down, then across — without cutting the skin. Then scoop the cubes out with a spoon. Scoring in the shell means you never have to chase a slippery, naked avocado around the board.",
-        "Add the avocado to the bowl last and fold everything together gently with the lime juice, cilantro, salt, and pepper. Gentle is the whole game here: stir hard and you've made guacamole. Set it aside while you cook the steak.",
-        "Pat the steak very dry and season both sides hard with salt and pepper. Heat the searing oil in a skillet over medium-high until it shimmers.",
-        "Lay the steak in and don't touch it: 3-4 min per side for medium-rare (125-130°F). Move it to a plate and rest it 5 min — resting is not optional, it's what keeps the juices in the meat instead of on the board.",
-        "Slice the steak against the grain, lay it on the plate, and spoon the avocado-tomato salsa over the top. The cool, bright salsa against the warm, rich steak is the whole point."
+        "Make the pico first so the flavors mingle while you cook. Halve the tomato, scoop out the watery seeds so it doesn't go soupy, and lay a piece flat. Slice it into flat planks, then into strips, then across into small even cubes — planks, strips, cubes.",
+        "Dice the onion the same way and a little smaller than the tomato, since raw onion is loud and you want it in the background. Mince the jalapeño fine. Keep your holding hand in a claw, knuckles guiding the blade, fingertips tucked clear.",
+        "Toss the tomato, onion, jalapeño, and cilantro in a bowl with the lime juice and a good pinch of salt. Set it aside — matching cube sizes is the goal, so eyeball your pile and re-cut any stragglers.",
+        "Pat the chicken dry and season both sides with salt, pepper, and cumin. If the breast is thick, lay your hand flat on top and slice it sideways into two thinner cutlets so it cooks fast and even.",
+        "Heat the olive oil in a skillet over medium-high until it shimmers. Lay the chicken in and leave it alone 5-6 min, until deep golden. Flip and cook 3-4 more min, until 165°F and no pink remains.",
+        "Rest the chicken a few minutes, then spoon the cold, bright pico over the warm chicken. The contrast is the point — and look at your dice."
       ],
-      why:"Third rep of the even dice, and avocado is the challenge the pico and the cucumber never gave you: it's soft, so there's nothing firm to cut against and every clumsy move shows as mush. Beat it with two habits — pick a firm avocado, and score it in the skin so you dice with support instead of chasing loose flesh — and fold it in gently at the very end. Nail this and you've covered the three ways a vegetable fights the knife: firm, watery, and soft. That's real knife control, and it's the foundation for rung 5, where you start cooking vegetables to the right point instead of serving them raw.",
-      src:'Salsa rewritten from Downshiftology, <a href="https://downshiftology.com/recipes/avocado-salsa/">Avocado Salsa</a>, scaled to one serving. The seared-steak method is your own go-to move, not from a cited recipe. Macros are per-ingredient estimates.'
+      why:"This is your first honest rep at the even dice, rung 4, and a firm tomato and onion are the right place to start because they fight back against the blade instead of squashing under it. Chase one habit above all: pieces that are all the same size. Do it with planks, then strips, then cubes, and a claw grip that keeps your knuckles guiding the knife and your fingertips safe. Even cubes look clean on the plate now, and they matter more later: at rung 5 you start cooking vegetables to the right point, and only same-size pieces cook evenly. Nail the firm dice tonight and the watery and soft vegetables become variations on a move you already own.",
+      src:'Pico rewritten from Cooking Classy, <a href="https://www.cookingclassy.com/pico-de-gallo/">Pico de Gallo</a>, scaled to one serving. The seared-chicken method is a basic sear, not from a cited recipe. Macros are per-ingredient estimates.'
     }
   ],
   history:[
