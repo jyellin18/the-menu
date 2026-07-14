@@ -5,7 +5,7 @@
     "1. Apply heat to a single protein in a pan (sear steak, cook chicken).",
     "2. Fat as a medium + basting; rest and doneness by feel/temp.",
     "3. Pan sauce off the fond (deglaze, mount with butter).",
-    "4. Knife basics — even dice.",
+    "4. Knife basics \u2014 even dice.",
     "5. Saute aromatics + vegetables to the right point.",
     "6. Cook a starch in the pot (rice, pasta, potatoes) to correct texture.",
     "7. Time a full plate: protein + veg + starch finishing together.",
@@ -55,23 +55,23 @@
       "dish": "Chicken Thighs with Lemon-Butter Pan Sauce",
       "made": true,
       "verdict": "liked",
-      "note": "First solo pan sauce — deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."
+      "note": "First solo pan sauce \u2014 deglazed the fond, mounted cold butter, lemon as the acid. Cleared rung 3."
     },
     {
       "date": "2026-06-25",
       "dish": "Bacon, Eggs & Rice with Homemade Chili Oil",
       "made": true,
       "verdict": "liked",
-      "note": "Improvised a chili oil from bacon fat, minced garlic, spicy chili-infused olive oil, and chili flakes over bacon, eggs, and rice. Liked it but too spicy — used too much spicy oil. Lesson: heat compounds; build from mild and add the spicy oil by the teaspoon off heat, tasting up."
+      "note": "Improvised a chili oil from bacon fat, minced garlic, spicy chili-infused olive oil, and chili flakes over bacon, eggs, and rice. Liked it but too spicy \u2014 used too much spicy oil. Lesson: heat compounds; build from mild and add the spicy oil by the teaspoon off heat, tasting up."
     }
   ],
   "awaiting_feedback": {
     "date": "2026-07-14",
     "options": [
-      "Pan-Seared Pork Chops with Garlic Butter Pan Sauce",
-      "Butter-Basted Salmon with Lemon",
-      "Honey Garlic Glazed Chicken Breast",
-      "Seared Steak over a Chopped Greek Salad"
+      "Steak au Poivre",
+      "Garlic Butter Shrimp Scampi",
+      "Chicken with Creamy Mushroom Pan Sauce",
+      "Steak Tacos with Fresh Pico de Gallo"
     ]
   }
 }
